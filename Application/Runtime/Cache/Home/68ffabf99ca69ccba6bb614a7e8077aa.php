@@ -15,16 +15,6 @@
     <script type="text/javascript" src="/src/assets/js/bui-min.js"></script>
     <script type="text/javascript" src="/src/assets/js/common/main-min.js"></script>
     <script type="text/javascript" src="/src/assets/js/config-min.js"></script>
-
-
-    <link rel="stylesheet" type="text/css" href="/src/Css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="/src/Css/bootstrap-responsive.css" />
-    <link rel="stylesheet" type="text/css" href="/src/Css/style.css" />
-    <script type="text/javascript" src="/src/Js/jquery.js"></script>
-    <script type="text/javascript" src="/src/Js/jquery.sorted.js"></script>
-    <script type="text/javascript" src="/src/Js/bootstrap.js"></script>
-    <script type="text/javascript" src="/src/Js/ckform.js"></script>
-    <script type="text/javascript" src="/src/Js/common.js"></script>
 </head>
 <body>
 
@@ -85,7 +75,7 @@
             <td style="max-width: 70px;"><?php echo ($vo['xm_id']); ?></td>
             <td>王宇奇</td>
             <td>稿件类型</td>
-            <td><?php echo (msubstr($vo['xm_cjsj'],0,10)); ?></td>
+            <td><?php echo ($vo['xm_cjsj']); ?></td>
             <td><?php echo (msubstr($vo['xm_tjsj'],0,10)); ?></td>
             <td><?php echo ($vo['xm_zs']); ?></td>
             <td><?php echo ($vo['xm_dj']); ?></td>

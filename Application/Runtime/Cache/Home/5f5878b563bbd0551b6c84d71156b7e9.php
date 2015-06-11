@@ -51,7 +51,7 @@
           {text:'系统管理',items:[
               {id:'1',text:'译员管理',href:'/index.php/Home/Member/yiyuan_list'},
               {id:'2',text:'管理员列表',href:'Role/index.html'},
-              {id:'3',text:'账单列表',href:'http://localhost/index.php/home/Bill/Bill_list'},
+              {id:'3',text:'账单列表',href:'/index.php/home/Bill/Bill_list'},
               {id:'4',text:'译员反馈',href:''}
           ]
           },
