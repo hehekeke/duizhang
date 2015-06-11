@@ -11,7 +11,6 @@
     <link href="/src/assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
     <link href="/src/assets/css/bui-min.css" rel="stylesheet" type="text/css" />
     <link href="/src/assets/css/main-min.css" rel="stylesheet" type="text/css" />
-
     <script type="text/javascript" src="/src/assets/js/jquery-1.8.1.min.js"></script>
     <script type="text/javascript" src="/src/assets/js/bui-min.js"></script>
     <script type="text/javascript" src="/src/assets/js/common/main-min.js"></script>
@@ -62,6 +61,25 @@
             padding-top: 2px;
 
         }
+    </style>
+    <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+
     </style>
 </head>
 <body>

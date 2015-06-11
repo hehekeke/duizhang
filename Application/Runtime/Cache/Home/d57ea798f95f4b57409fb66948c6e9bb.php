@@ -3,6 +3,17 @@
 <head>
     <title></title>
     <meta charset="UTF-8">
+    <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="/src/assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+    <link href="/src/assets/css/bui-min.css" rel="stylesheet" type="text/css" />
+    <link href="/src/assets/css/main-min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/src/assets/js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="/src/assets/js/bui-min.js"></script>
+    <script type="text/javascript" src="/src/assets/js/common/main-min.js"></script>
+    <script type="text/javascript" src="/src/assets/js/config-min.js"></script>
     <link rel="stylesheet" type="text/css" href="/src/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="/src/css/bootstrap-responsive.css" />
     <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
@@ -11,9 +22,45 @@
     <script type="text/javascript" src="/src/js/bootstrap.js"></script>
     <script type="text/javascript" src="/src/js/ckform.js"></script>
     <script type="text/javascript" src="/src/js/common.js"></script>
+    <style type="text/css">
+        .page{
+            width:520px;
+            float:right;
+            font-size:16px;
+            margin-top:15px;
+            margin-top:10px;
 
- 
+        }
+        .current,.next,.end,.prev,.first{
+            float: left;
+            /*display: block;*/
+        }
+        .current{
+            width: 28px;
+            height: 18px;
+            background-color: blue;
+            border-radius: 2px;
+            padding-top: 2px;
+            line-height: 15px;
+            text-align: center;
+            border: 1px #ccc solid;
+            color: #fff;
+        }
+        .num,.end,.first{
+            display: block;
+            float: left;
+            width: 28px;
+            height: 18px;
+            background-color: #fff;
+            border-radius: 2px;
+            color:black;
+            border: 1px #ccc solid;
+            line-height: 15px;
+            text-align: center;
+            padding-top: 2px;
 
+        }
+    </style>
     <style type="text/css">
         body {
             padding-bottom: 40px;
@@ -33,6 +80,11 @@
 
 
     </style>
+</head>
+<body>
+
+</body>
+</html>
 </head>
 <body>
 <form class="form-inline definewidth m20" action="index.html" method="get">    

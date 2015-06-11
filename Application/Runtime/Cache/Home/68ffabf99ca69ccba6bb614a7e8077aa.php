@@ -10,7 +10,6 @@
     <link href="/src/assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
     <link href="/src/assets/css/bui-min.css" rel="stylesheet" type="text/css" />
     <link href="/src/assets/css/main-min.css" rel="stylesheet" type="text/css" />
-
     <script type="text/javascript" src="/src/assets/js/jquery-1.8.1.min.js"></script>
     <script type="text/javascript" src="/src/assets/js/bui-min.js"></script>
     <script type="text/javascript" src="/src/assets/js/common/main-min.js"></script>
@@ -62,14 +61,6 @@
 
         }
     </style>
-</head>
-<body>
-
-</body>
-</html>
-
-
-
     <style type="text/css">
         body {
             padding-bottom: 40px;
@@ -91,10 +82,34 @@
     </style>
 </head>
 <body>
-<form class="form-inline definewidth m20" action="index.html" method="get">
+
+</body>
+</html>
+    <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<form class="form-inline definewidth m20" action="/index.php/Home/Bill/queryBill" method="get">
     导入日期：
-    <input type="text" name="username" id="username"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;
-    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增用户</button>
+    <input type="text" name="xm_yuefen" id="username"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
 </form>
 <table class="table table-bordered table-hover definewidth m10">
     <thead>

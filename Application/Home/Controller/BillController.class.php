@@ -11,7 +11,7 @@ class BillController extends Controller {
     public function Bill_list(){
         $duizhangdan = M("duizhangdan");
         $res_count= $duizhangdan->count();
-        $Page = new  \Think\Page($res_count,5);
+        $Page = new  \Think\Page($res_count,7);
         $show = $Page->show();// 分页显示输出
 
         $res = $duizhangdan->limit($Page->firstRow.','.$Page->listRows)->select();
@@ -38,5 +38,17 @@ class BillController extends Controller {
         $res = $duizhangdan->where('id = '.$bill_id)->find();
         $this->assign("data",$res);
         $this->display("Bill_update");
+    }
+
+    public function queryBill(){
+        $duizhangdan = M("duizhangdan");
+        $xm_yuefen = $_POST['xm_yuefen'];
+        $res_count= $duizhangdan->where("xm_yuefen ='".$xm_yuefen."'")->count();
+        $Page = new  \Think\Page($res_count,7);
+        $show = $Page->show();// 分页显示输出
+        $res = $duizhangdan->where("xm_yuefen ='".$xm_yuefen."'")->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('page',$show);
+        $this->assign("list",$res);
+        $this->display("Bill_list");
     }
 }

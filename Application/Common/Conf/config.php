@@ -1,7 +1,7 @@
 <?php
 return array(
 	//'配置项'=
-//    'SHOW_PAGE_TRACE' =>true,//调试
+    'SHOW_PAGE_TRACE' =>true,//调试
     'DB_TYPE'   => 'mysql', // 数据库类型
     'DB_HOST'   => 'localhost', // 服务器地址
     'DB_NAME'   => 'duizhang', // 数据库名
