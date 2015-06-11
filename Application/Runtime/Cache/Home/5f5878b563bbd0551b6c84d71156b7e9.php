@@ -16,16 +16,6 @@
     <script type="text/javascript" src="/src/assets/js/bui-min.js"></script>
     <script type="text/javascript" src="/src/assets/js/common/main-min.js"></script>
     <script type="text/javascript" src="/src/assets/js/config-min.js"></script>
-
-
-    <link rel="stylesheet" type="text/css" href="/src/Css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="/src/Css/bootstrap-responsive.css" />
-    <link rel="stylesheet" type="text/css" href="/src/Css/style.css" />
-    <script type="text/javascript" src="/src/Js/jquery.js"></script>
-    <script type="text/javascript" src="/src/Js/jquery.sorted.js"></script>
-    <script type="text/javascript" src="/src/Js/bootstrap.js"></script>
-    <script type="text/javascript" src="/src/Js/ckform.js"></script>
-    <script type="text/javascript" src="/src/Js/common.js"></script>
 </head>
 <body>
 
@@ -55,20 +45,30 @@
 
     </ul>
    </div>
-
   <script>
     BUI.use('common/main',function(){
       var config = [{id:'1',menu:[
           {text:'系统管理',items:[
-              {id:'12',text:'机构管理',href:'http://localhost/index.php/home/Member/yiyuan_list'},
-              {id:'3',text:'角色管理',href:'Role/index.html'},
-              {id:'4',text:'账单列表',href:'http://localhost/index.php/home/Bill/Bill_list'},
-              {id:'6',text:'菜单管理',href:'Menu/index.html'}]}]},
+              {id:'1',text:'译员管理',href:'/index.php/Home/Member/yiyuan_list'},
+              {id:'2',text:'管理员列表',href:'Role/index.html'},
+              {id:'3',text:'账单列表',href:'http://localhost/index.php/home/Bill/Bill_list'},
+              {id:'4',text:'译员反馈',href:''}
+          ]
+          },
+          {text:'译员中心',items:[
+              {id:'5',text:'资料维护',href:'/index.php/home/'},
+              {id:'6',text:'角色管理',href:'Role/index.html'},
+              {id:'7',text:'账单列表',href:'http://localhost/index.php/home/Bill/Bill_list'},
+              {id:'8',text:'菜单管理',href:'Menu/index.html'}
+          ]
+          }
+          ,]},
           {id:'7',homePage : '9',menu:[{text:'业务管理',items:[{id:'9',text:'查询业务',href:'Node/index.html'}]}]}];
       new PageUtil.MainPage({
         modulesConfig : config
       });
     });
   </script>
+
  </body>
 </html>
