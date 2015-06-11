@@ -30,4 +30,13 @@ class BillController extends Controller {
             return 1;
         }
     }
+
+
+    public function Bill_toupdate(){
+        $bill_id = $_GET['id'];
+        $duizhangdan = M("duizhangdan");
+        $res = $duizhangdan->where('id = '.$bill_id)->find();
+        $this->assign("data",$res);
+        $this->display("Bill_update");
+    }
 }

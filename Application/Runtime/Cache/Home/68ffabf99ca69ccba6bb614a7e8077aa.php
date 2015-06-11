@@ -99,7 +99,7 @@
                     <?php else: ?>输出的内容3<?php endif; ?>
             </td>
             <td>
-                <a href="edit.html">修改</a>
+                <a href="http://localhost/index.php/home/Bill/Bill_toupdate/id/<?php echo ($vo['id']); ?>">修改</a>
                 <a class="del" id="<?php echo ($vo['id']); ?>" href="">删除</a>
             </td>
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -111,17 +111,22 @@
 <script>
     $(function () {
         $(".del").click(function(){
-            var id= $(this).attr("id");
-            $.post("http://localhost/index.php/home/Bill/Bill_del",{id:id},function(data){
-                if(data == 0){
-                    alert("删除成功");
-                    window.location.reload();
+            if(confirm("确定要删除吗？")){
+                var id= $(this).attr("id");
+                $.post("http://localhost/index.php/home/Bill/Bill_del",{id:id},function(data){
+                    if(data == 0){
+                        alert("删除成功");
+                        window.location.reload();
 
-                }else if(data == 1){
-                    alert("删除失败");
-                }
-            });
-            return false;
+                    }else if(data == 1){
+                        alert("删除失败");
+                    }
+                });
+                return false;
+            }else{
+                return false;
+            }
+
         });
 
         $('#addnew').click(function(){
@@ -136,7 +141,7 @@
     {
 
 
-        if(confirm("确定要删除吗？"))
+
         {
 
             var url = "index.html";
