@@ -15,16 +15,53 @@
     <script type="text/javascript" src="/src/assets/js/bui-min.js"></script>
     <script type="text/javascript" src="/src/assets/js/common/main-min.js"></script>
     <script type="text/javascript" src="/src/assets/js/config-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/src/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    <script type="text/javascript" src="/src/js/jquery.js"></script>
+    <script type="text/javascript" src="/src/js/jquery.sorted.js"></script>
+    <script type="text/javascript" src="/src/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/src/js/ckform.js"></script>
+    <script type="text/javascript" src="/src/js/common.js"></script>
+    <style type="text/css">
+        .page{
+            width:520px;
+            float:right;
+            font-size:16px;
+            margin-top:15px;
+            margin-top:10px;
 
+        }
+        .current,.next,.end,.prev,.first{
+            float: left;
+            /*display: block;*/
+        }
+        .current{
+            width: 28px;
+            height: 18px;
+            background-color: blue;
+            border-radius: 2px;
+            padding-top: 2px;
+            line-height: 15px;
+            text-align: center;
+            border: 1px #ccc solid;
+            color: #fff;
+        }
+        .num,.end,.first{
+            display: block;
+            float: left;
+            width: 28px;
+            height: 18px;
+            background-color: #fff;
+            border-radius: 2px;
+            color:black;
+            border: 1px #ccc solid;
+            line-height: 15px;
+            text-align: center;
+            padding-top: 2px;
 
-    <link rel="stylesheet" type="text/css" href="/src/Css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="/src/Css/bootstrap-responsive.css" />
-    <link rel="stylesheet" type="text/css" href="/src/Css/style.css" />
-    <script type="text/javascript" src="/src/Js/jquery.js"></script>
-    <script type="text/javascript" src="/src/Js/jquery.sorted.js"></script>
-    <script type="text/javascript" src="/src/Js/bootstrap.js"></script>
-    <script type="text/javascript" src="/src/Js/ckform.js"></script>
-    <script type="text/javascript" src="/src/Js/common.js"></script>
+        }
+    </style>
 </head>
 <body>
 
@@ -105,7 +142,7 @@
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
 </table>
-<div class="result page"><?php echo ($page); ?></div>
+<div class="page"><?php echo ($page); ?></div>
 </body>
 </html>
 <script>

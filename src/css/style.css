@@ -24,7 +24,7 @@ form{
 }
 
 .page{
-    text-align: right;margin-right:25px;margin-top:5px;
+    text-align: right;margin-top:5px;
 }
 
 .page a{
@@ -33,7 +33,6 @@ form{
 
 .page .current{
     margin-left: 5px;
-    color: red;
 }
 
 .table td input[type="checkbox"]{
