@@ -1,0 +1,1536 @@
+[ 2015-03-07T06:52:59+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T06:56:16+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T06:56:20+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: dept C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.003001s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id= ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid= ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.004000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T06:56:30+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: dept C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id= ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid= ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.015600s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T06:56:44+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2015-03-07T06:56:53+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: dept C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id= ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid= ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.015600s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T06:58:40+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T06:58:43+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: dept C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id= ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid= ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.015600s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T06:58:49+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: dept C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id= ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid= ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T06:58:55+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: dept C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id= ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid= ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T06:59:24+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T06:59:28+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id=Array ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid=Array ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T06:59:33+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015601s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id=Array ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid=Array ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.015600s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:00:23+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2015-03-07T07:00:26+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id=Array ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid=Array ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.015600s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:00:57+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:00:59+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id=Array ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid=Array ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.015600s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:01:38+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:01:40+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id=Array ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid=Array ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:02:27+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:02:29+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id=Array ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid=Array ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:02:52+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:02:57+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id=Array ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid=Array )  [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid=Array ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.015600s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:03:21+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:03:24+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 30 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:05:21+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2015-03-07T07:05:37+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:06:17+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:06:20+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=15 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=15 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('8','15')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 30 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:06:22+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 30 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:06:26+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=8 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=8 )  [ RunTime:0.000000s ]
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:06:29+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=9 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=9 )  [ RunTime:0.015601s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('7','9')  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2015-03-07T07:06:33+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 30 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:06:40+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2015-03-07T07:06:44+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:06:48+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:06:53+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:07:12+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:07:17+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:07:20+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 30 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:08:51+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:08:53+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:08:58+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 30 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:10:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:10:42+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:10:45+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.015600s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 30 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:11:10+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:11:13+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:11:16+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=15 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=15 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('8','15')  [ RunTime:0.015600s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 30 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:11:21+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 30 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2015-03-07T07:11:34+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:11:36+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:11:40+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=8 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=8 )  [ RunTime:0.000000s ]
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:11:44+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.003000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=15 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=15 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('8','15')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 30 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:11:52+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:11:56+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:11:58+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=8 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=8 )  [ RunTime:0.000000s ]
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.000000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.015600s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:14:14+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:14:17+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:20:48+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:20:50+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:20:53+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.004001s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 57 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:21:18+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:21:21+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.004000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=15 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=15 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('8','15')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 57 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:27:04+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: dept_id C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.005000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id= ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid= )  [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid= ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.005000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:27:06+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:27:08+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:27:10+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: dept_id C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.005000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id= )  [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id= ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid= ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.006000s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:27:19+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: dept_id C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.006000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id= )  [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( id= ) 
+SQL: SELECT `id` FROM `dept` WHERE ( fid= )  [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id` FROM `dept` WHERE ( fid= ) 
+NOTIC: [2] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.006001s ]
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db.class.php 第 495 行.
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ()  [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `fixed_assets` WHERE `dept` IN () 
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:00+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:03+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.011001s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:28:08+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.005000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=15 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=15 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('8','15')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:28:16+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.003000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:17+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.008000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:18+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.010001s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:19+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.006000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:20+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.005000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:21+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.011001s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-03-07T07:28:22+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.005001s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:23+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.003000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:24+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.003000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:25+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.004000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:28:26+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.003001s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:28:27+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.004000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:28+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.007000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:29+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.003000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:28:30+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.011000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:31+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.003000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:32+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.006000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:28:33+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.008001s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-03-07T07:28:43+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:28:47+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:28:49+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.008000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:52+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.011000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=15 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=15 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('8','15')  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:56+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:28:57+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:29:27+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_num
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.010001s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=15 )  [ RunTime:0.002000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=15 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('8','15')  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 29 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:29:31+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:29:35+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/money_money
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.008001s ]
+SQL: SELECT `id` FROM `dept` WHERE ( id=6 )  [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `dept` WHERE ( fid=6 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fixed_assets` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `fixed_assets` WHERE `dept` IN ('15','16','6')  [ RunTime:0.001001s ]
+NOTIC: [8] Use of undefined constant boolean - assumed 'boolean' C:\phpworkspace\lunwen\Application\Home\Controller\ManagerMoneyController.class.php 第 58 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-03-07T07:33:29+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:33:45+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:33:47+08:00 ] 127.0.0.1 /lunwen/index.php/Home/ManagerMoney/toSearch
+ERR: 模板不存在:./Application/Home/View/ManagerMoney/toSearch.html
+
+[ 2015-03-07T07:34:31+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:34:33+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:49:45+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-07T07:49:46+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:52:52+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-03-07T07:53:06+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:53:07+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:53:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:53:40+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:56:44+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:56:59+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:57:00+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:57:09+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-07T07:57:11+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T07:57:12+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T08:01:37+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-07T08:01:42+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

@@ -1,0 +1,138 @@
+[ 2015-05-05T14:27:25+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password='admin' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-05T14:27:26+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `role` WHERE ( id=2 )  [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `authority` WHERE `id` IN ('1','0','2','3','4','5','6','7','26','8','9','10','11','12','13','14','15','16','17','18','19','20')  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-05T14:27:49+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-05T14:27:50+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-05T14:59:02+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `role` WHERE ( id=2 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `authority` WHERE `id` IN ('1','0','2','3','4','5','6','7','26','8','9','10','11','12','13','14','15','16','17','18','19','20')  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-05T14:59:08+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-05T14:59:09+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-05T15:02:53+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-05T15:02:54+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-05T16:07:56+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.007500s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-05-05T16:07:57+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.016251s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2015-05-05T16:08:19+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.007500s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.001250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2015-05-05T16:08:20+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.017501s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+

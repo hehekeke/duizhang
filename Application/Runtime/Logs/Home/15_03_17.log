@@ -1,0 +1,2215 @@
+[ 2015-03-17T09:14:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password='admin' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T09:14:40+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T09:41:44+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password='admin' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-17T09:41:46+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T09:42:18+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='1' and password='1' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T09:42:23+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `user` WHERE ( username='1' and password='1' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T09:42:44+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='7' and password='7' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T09:42:45+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `user` WHERE ( username='7' and password ='7' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority` WHERE `id` IN ('1','2','3','4','5')  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T09:45:14+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password='admin' ) LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T09:45:15+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-03-17T09:52:55+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password='admin' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T09:52:56+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T09:54:01+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T09:54:33+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T09:54:51+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-03-17T09:54:52+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T09:55:33+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:19:41+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:20:11+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:20:13+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:30:20+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-17T10:31:27+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-03-17T10:31:52+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.017001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:32:10+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:32:37+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:33:05+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T10:33:53+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:38:48+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:38:53+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-03-17T10:39:02+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:39:03+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:45:01+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-03-17T10:45:04+08:00 ] 127.0.0.1 /lunwen/index.php/home/Agreement/fixed_update/fid/13
+ERR: ÈùûÊ≥ïÊìç‰Ωú:fixed_update
+
+[ 2015-03-17T10:45:56+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:45:59+08:00 ] 127.0.0.1 /lunwen/index.php/home/Agreement/fixed_update/fid/13
+ERR: ÈùûÊ≥ïÊìç‰Ωú:fixed_update
+
+[ 2015-03-17T10:46:20+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T10:46:25+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:46:26+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:47:27+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:47:33+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T10:49:19+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:49:26+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:49:35+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:50:32+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T10:50:37+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T10:52:45+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:01:56+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T11:02:38+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:04:10+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:04:36+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:04:43+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T11:04:45+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-03-17T11:06:01+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:07:13+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:08:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:09:46+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-17T11:10:21+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:11:09+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:13:38+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:15:09+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-03-17T11:16:07+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T11:16:42+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:17:06+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:17:47+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:17:59+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:18:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:20:12+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:20:43+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T11:21:32+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T11:21:56+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:21:49+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password='admin' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:21:50+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:25:20+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:25:28+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:25:53+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.012000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-17T13:28:15+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:28:57+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:30:07+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:30:55+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:31:25+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:33:25+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:33:46+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T13:34:54+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:37:44+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T13:38:06+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:38:08+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:42:20+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:42:43+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2015-03-17T13:43:10+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T13:43:24+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:43:41+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:46:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:47:12+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:48:03+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:49:15+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:49:52+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:50:14+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:51:29+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-03-17T13:51:53+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:52:26+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T13:53:07+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T13:56:10+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T13:57:34+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T13:58:46+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-03-17T13:59:47+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T13:59:50+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:00:19+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:00:59+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T14:02:01+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:02:35+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T14:05:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T14:09:02+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:09:16+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:10:21+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:12:29+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:15:16+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:16:54+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-17T14:19:03+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-03-17T14:25:51+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:28:55+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:29:37+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:29:40+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:35:03+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:36:27+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:36:51+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:37:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:38:46+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:43:00+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:44:03+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:44:05+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:44:55+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:46:17+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T14:46:19+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:46:20+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-03-17T14:46:29+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:46:35+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:56:55+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:57:59+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T14:58:01+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T14:58:26+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T14:58:45+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T15:06:02+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T15:07:32+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T15:17:03+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T15:19:27+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T15:20:08+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T15:21:55+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-03-17T15:22:33+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-03-17T15:24:13+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T15:25:09+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T15:26:20+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T15:33:48+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T15:35:02+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T15:36:15+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T15:37:34+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-03-17T15:38:09+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-17T15:38:30+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T15:39:19+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T18:04:09+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ (trying to connect via tcp://localhost:3306) C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2015-03-17T18:04:13+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ (trying to connect via tcp://localhost:3306) C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2015-03-17T18:04:15+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ (trying to connect via tcp://localhost:3306) C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2015-03-17T18:04:17+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ (trying to connect via tcp://localhost:3306) C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2015-03-17T18:04:19+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ (trying to connect via tcp://localhost:3306) C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2015-03-17T18:04:21+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ (trying to connect via tcp://localhost:3306) C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2015-03-17T18:04:23+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ (trying to connect via tcp://localhost:3306) C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2015-03-17T18:04:25+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ (trying to connect via tcp://localhost:3306) C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2015-03-17T18:04:27+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ (trying to connect via tcp://localhost:3306) C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2015-03-17T18:04:29+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ (trying to connect via tcp://localhost:3306) C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2015-03-17T18:04:35+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ (trying to connect via tcp://localhost:3306) C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+ C:\phpworkspace\lunwen\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php Á¨¨ 52 Ë°å.
+ERR: ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2015-03-17T18:04:49+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.016600s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password='admin' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-17T18:04:51+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `user` WHERE ( username='admin' and password ='admin' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `role` WHERE ( id=1 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

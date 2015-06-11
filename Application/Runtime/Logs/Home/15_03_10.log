@@ -1,0 +1,251 @@
+[ 2015-03-10T09:18:19+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-10T09:26:05+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-10T09:26:16+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-10T09:26:17+08:00 ] 127.0.0.1 /lunwen/index.php/home/device/device_type_data
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `device_rate` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `device_rate`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-10T09:48:16+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:48:16+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:49:48+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:49:48+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:49:54+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:49:54+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:49:54+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:49:54+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:49:55+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:49:55+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:50:05+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:50:05+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:50:05+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:50:09+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:50:12+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:50:12+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:50:12+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:51:12+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:51:12+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:51:12+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:56:43+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:56:43+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:56:43+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:56:46+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:56:47+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:56:47+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:56:47+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:58:32+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:58:32+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:32+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:37+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:58:37+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:37+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:38+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:58:38+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:38+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:38+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:58:38+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:38+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:38+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:38+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:58:38+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:58:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:58:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T09:58:39+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:52+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/jquery.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:52+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T09:58:52+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/css/style.css
+ERR: 非法操作:css
+
+[ 2015-03-10T10:00:20+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T10:00:30+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/js/cloud.js
+ERR: 非法操作:js
+
+[ 2015-03-10T10:35:00+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-03-10T10:35:07+08:00 ] 127.0.0.1 /lunwen/index.php/home/user/index
+ERR: 非法操作:index
+
+[ 2015-03-10T17:39:29+08:00 ] 127.0.0.1 /lunwen/index.php/home/index/authority_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `authority` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `authority`  [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-10T17:40:29+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-03-10T17:40:31+08:00 ] 127.0.0.1 /lunwen/index.php/home/dept/dept_tree
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dept` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `dept`  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

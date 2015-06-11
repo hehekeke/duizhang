@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <include file="Public:commit" />
+
+
+
+    <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<form class="form-inline definewidth m20" action="index.html" method="get">
+    导入日期：
+    <input type="text" name="username" id="username"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增用户</button>
+</form>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+    <tr>
+        <th>导入日期</th>
+        <th>项目编号</th>
+        <th>译员</th>
+        <th>稿件类型</th>
+        <th>接稿日期</th>
+        <th>交稿日期</th>
+        <th>字数</th>
+        <th>单价</th>
+        <th>金额</th>
+        <th>文件名</th>
+        <th>承接范围</th>
+        <th>状态说明</th>
+        <th>确定状态说明</th>
+        <th>操作说明</th>
+    </tr>
+    </thead>
+
+    <volist name="list" id="vo">
+        <tr>
+            <td>{$vo['xm_yuefen']}</td>
+
+            <td style="max-width: 70px;">{$vo['xm_id']}</td>
+            <td>王宇奇</td>
+            <td>稿件类型</td>
+            <td>{$vo['xm_cjsj']|msubstr=0,10}</td>
+            <td>{$vo['xm_tjsj']|msubstr=0,10}</td>
+            <td>{$vo['xm_zs']}</td>
+            <td>{$vo['xm_dj']}</td>
+            <td>{$vo['xm_je']}</td>
+            <td style="max-width: 100px;">{$vo['xm_fyfx']}</td>
+            <td style="max-width: 100px;" >{$vo['xm_cjfw']}</td>
+            <td></td>
+            <td>
+                <if condition="$vo['xm_fkzt'] eq 3"><span style="color: green">已经确定</span>
+
+                    <else />输出的内容3
+                </if>
+            </td>
+            <td>
+                <a href="edit.html">修改</a>
+                <a class="del" id="{$vo['id']}" href="">删除</a>
+            </td>
+        </tr>
+    </volist>
+
+</table>
+<div class="result page">{$page}</div>
+</body>
+</html>
+<script>
+    $(function () {
+        $(".del").click(function(){
+            var id= $(this).attr("id");
+            $.post("http://localhost/index.php/home/Bill/Bill_del",{id:id},function(data){
+                if(data == 0){
+                    alert("删除成功");
+                    window.location.reload();
+
+                }else if(data == 1){
+                    alert("删除失败");
+                }
+            });
+            return false;
+        });
+
+        $('#addnew').click(function(){
+
+            window.location.href="add.html";
+        });
+
+
+    });
+
+    function del(id)
+    {
+
+
+        if(confirm("确定要删除吗？"))
+        {
+
+            var url = "index.html";
+
+            window.location.href=url;
+
+        }
+
+
+
+
+    }
+</script>
