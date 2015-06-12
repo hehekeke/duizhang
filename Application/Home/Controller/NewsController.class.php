@@ -8,6 +8,16 @@
 namespace Home\Controller;
 use Think\Controller;
 
-class MemberController extends Controller{
+class NewsController extends Controller{
+
+	public function news(){
+
+		$this->display('news');
+	}
+
+	//查询新闻
+	public function getNews(){
+		
+	}
 	
 }

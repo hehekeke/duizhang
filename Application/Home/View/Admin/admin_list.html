@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="/src/assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+    <link href="/src/assets/css/bui-min.css" rel="stylesheet" type="text/css" />
+    <link href="/src/assets/css/main-min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/src/assets/js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="/src/assets/js/bui-min.js"></script>
+    <script type="text/javascript" src="/src/assets/js/common/main-min.js"></script>
+    <script type="text/javascript" src="/src/assets/js/config-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/src/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    <script type="text/javascript" src="/src/js/jquery.js"></script>
+    <script type="text/javascript" src="/src/js/jquery.sorted.js"></script>
+    <script type="text/javascript" src="/src/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/src/js/ckform.js"></script>
+    <script type="text/javascript" src="/src/js/common.js"></script>
+    <style type="text/css">
+    .page{
+        width:200px;
+        float:right;
+        font-size:16px;
+        margin-top:15px;
+        margin-top:10px;
+     
+    }
+    .current,.next,.end,.prev,.first{
+        float: left;
+        /*display: block;*/
+    }
+    .current{
+     width: 28px;
+     height: 18px;
+     background-color: blue;
+     border-radius: 2px;
+     padding-top: 2px;
+     line-height: 15px;
+     text-align: center;
+     border: 1px #ccc solid;
+     color: #fff;
+    }
+    .num,.end,.first{
+        display: block;
+        float: left;
+        width: 28px;
+        height: 18px;
+        background-color: #fff;
+        border-radius: 2px;
+        color:black;
+        border: 1px #ccc solid;
+        line-height: 15px;
+        text-align: center;
+        padding-top: 2px;
+     
+    }
+</style>
+
+</head>
+<body>
+<form class="form-inline definewidth m20" action="index.html" method="get">    
+    用户名称：
+    <input type="text" name="username" id="username"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增用户</button>
+</form>
+<table class="table table-bordered table-hover definewidth m10">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>登录账号</th>
+        <th>姓名</th>
+        <th>用户组群</th>
+        <th>账号状态</th>
+        <th>管理</th>
+    </tr>
+    </thead>
+
+         <volist name="list" id="m">
+             <tr>
+                <td>{$m.u_id}</td>
+                <td>{$m.u_name}</td>
+                <td>{$m.u_mingzi}</td>
+                <td>管理员</td>
+                <if condition="($m.u_kaitong eq 1)">
+                     <td><span style="color:green">账号正常</span>|禁用</td>
+                     <elseif condition="$m.u_kaitong eq 0"/><td><span style="color:red">已被锁定</span>|恢复</td>
+                </if>
+
+                <td>
+                    <a href="/index.php/Home/Member/editMember?id={$m.u_id}">编辑</a>|
+                    <a class="del" id="{$m.u_id}" >删除</a>
+                </td>
+            </tr>
+        </volist>	
+</table>
+
+<div class="page">
+    {$page}
+</div>
+</body>
+</html>
+<script>
+    $(function () {
+        $(".del").click(function(){
+            if(confirm("确定要删除吗？")){
+                var id= $(this).attr("id");
+                $.post("http://localhost/index.php/home/Admin/deleteMember",{id:id},function(data){
+                    if(data == 0){
+                        alert("删除成功");
+                        window.location.reload();
+
+                    }else if(data == 1){
+                        alert("删除失败");
+                    }
+                });
+                return false;
+            }else{
+                return false;
+            }
+
+        });
+
+
+        $('#addnew').click(function(){
+
+				window.location.href="add.html";
+		 });
+
+
+    });
+
+	function del(id)
+	{
+		
+		
+		if(confirm("确定要删除吗？"))
+		{
+		
+			var url = "index.html";
+			
+			window.location.href=url;		
+		
+		}
+	
+	
+	
+	
+	}
+</script>

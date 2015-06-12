@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <include file="Public:commit" />
+
+    <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+
+    </style>
+</head>
+<body style="max-height: 100px;">
+<form action="/index.php/Home/Bill/Bill_update" method="post" class="definewidth m20">
+    <volist name="BillInfo" id="user">
+        <input type="hidden" name="id" value="{$user.id}" />
+        <table class="table table-bordered table-hover definewidth m10">
+            <tr>
+                <td  class="tableleft">项目编号</td>
+                <td><input type="text" disabled="true" name="xm_id" value="{$user.xm_id}"/></td>
+                <td class="tableleft">译员</td>
+                <td><input type="text" name="text" value="王宇奇"/></td>
+            </tr>
+
+            <tr>
+                <td class="tableleft">稿件类型</td>
+                <td><input type="text" name="xm_fyfx" value="{$user['xm_fyfx']}"/></td>
+                <td class="tableleft">接稿时间</td>
+                <td><input type="text" name="xm_cjsj" value="{$user['xm_cjsj']|msubstr=0,10}"/></td>
+            </tr>
+            <tr>
+                <td class="tableleft">交稿时间</td>
+                <td><input type="text" name="xm_tjsj" value="{$user['xm_tjsj']|msubstr=0,10}"/></td>
+                <td class="tableleft">字数</td>
+                <td><input type="text" name="xm_zs" value="{$user.xm_zs}"/></td>
+            </tr>
+
+            <tr>
+                <td class="tableleft">单价</td>
+                <td><input type="text" name="xm_dj" value="{$user.xm_dj}"/></td>
+                <td class="tableleft">金额</td>
+                <td><input type="text" name="xm_je" value="{$user.xm_je}"/></td>
+            </tr>
+
+            <tr>
+                <td class="tableleft">文件名</td>
+                <td><input type="text" name="xm_fyfx" value="{$user['xm_fyfx']}"/></td>
+                <td class="tableleft">状态说明</td>
+                <td>
+                    <!--<if condition="$vo['xm_fkzt'] eq 3"><span style="color: green">已经确定</span>-->
+                        <!--<input type="text" name="realname" value=""/>-->
+                        <!--<else /><span style="color: red">已经确定</span>-->
+                    <!--</if>-->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableleft">承接范围</td>
+                <td colspan="3"><input style="width:77%" type="text" name="xm_cjfw" value="{$user['xm_cjfw']}"/></td>
+
+            </tr>
+            <tr>
+                <td class="tableleft">译员反馈说明</td>
+                <td colspan="3"><input style="width:77%" type="text" name="realname" value="{$user.u_mingzi}"/></td>
+            </tr>
+
+            <tr>
+
+                <td colspan="4">
+                    <button type="submit" class="btn btn-primary" type="button">保存</button>				 &nbsp;&nbsp;
+                    <button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+                </td>
+
+            </tr>
+        </table>
+    </volist>
+</form>
+</body>
+</html>
+<script>
+    $(function () {
+        $('#backid').click(function(){
+            window.location.href="{:U('Bill/Bill_list')}";
+        });
+
+
+    });
+</script>

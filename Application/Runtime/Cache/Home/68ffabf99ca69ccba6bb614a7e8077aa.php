@@ -106,7 +106,7 @@
     </style>
 </head>
 <body>
-<form class="form-inline definewidth m20" action="/index.php/Home/Bill/queryBill" method="post">
+<form class="form-inline definewidth m20" action="/index.php/Home/Bill/queryBill" method="get">
     导入日期：
     <input type="text" name="xm_yuefen" class="abc input-default" value="<?php echo ($xm_yuefen); ?>">&nbsp;&nbsp;
     <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
@@ -125,9 +125,9 @@
         <th>金额</th>
         <th>文件名</th>
         <th>承接范围</th>
-        <th>状态说明</th>
-        <th>确定状态说明</th>
-        <th>操作说明</th>
+        <th  style="max-width: 24px;">状态</th>
+        <th>确定状态</th>
+        <th>操作</th>
     </tr>
     </thead>
 
@@ -136,23 +136,23 @@
 
             <td style="max-width: 70px;"><?php echo ($vo['xm_id']); ?></td>
             <td>王宇奇</td>
-            <td>稿件类型</td>
+            <td><?php echo ($vo['xm_fyfx']); ?></td>
             <td><?php echo (msubstr($vo['xm_cjsj'],0,10)); ?></td>
             <td><?php echo (msubstr($vo['xm_tjsj'],0,10)); ?></td>
             <td><?php echo ($vo['xm_zs']); ?></td>
             <td><?php echo ($vo['xm_dj']); ?></td>
             <td><?php echo ($vo['xm_je']); ?></td>
-            <td style="max-width: 100px;"><?php echo ($vo['xm_fyfx']); ?></td>
-            <td style="max-width: 100px;" ><?php echo ($vo['xm_cjfw']); ?></td>
-            <td></td>
+            <td style="max-width: 100px;"><?php echo ($vo['xm_myd']); ?></td>
+            <td style="max-width: 100px;" ><?php echo (msubstr_san($vo['xm_cjfw'],0,6)); ?></td>
+            <td  style="max-width: 24px;"></td>
             <td>
                 <?php if($vo['xm_fkzt'] == 3): ?><span style="color: green">已经确定</span>
 
-                    <?php else: ?>输出的内容3<?php endif; ?>
+                    <?php else: ?><span style="color: red">未确定</span><?php endif; ?>
             </td>
             <td>
                 <a href="http://localhost/index.php/home/Bill/Bill_toupdate/id/<?php echo ($vo['id']); ?>">修改</a>
-                <a class="del" id="<?php echo ($vo['id']); ?>" href="">删除</a>
+                <a class="del" id="<?php echo ($vo['id']); ?>">删除</a>
             </td>
         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
