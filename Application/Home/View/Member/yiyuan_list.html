@@ -30,15 +30,22 @@
                 padding-right: 5px;
             }
         }
+        .btn a{
+            text-decoration: none;
+            color:#fff;
+        }
 
 
     </style>
 </head>
 <body>
-<form class="form-inline definewidth m20" action="index.html" method="get">    
+<form class="form-inline definewidth m20" action="index.php/Home/Member/add" method="get">    
     用户名称：
     <input type="text" name="username" id="username"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
-    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增用户</button>
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; 
+    <button type="button" name="add" class="btn btn-success" id="addnew">
+        <a href="/index.php/Home/Member/addMember">新增用户</a>
+    </button>
 </form>
 <table class="table table-bordered table-hover definewidth m10">
     <thead>
