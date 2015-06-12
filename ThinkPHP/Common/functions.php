@@ -1459,13 +1459,13 @@ function think_filter(&$value){
 {
     if(function_exists("mb_substr")){
         if ($suffix && strlen($str)>$length)
-            return mb_substr($str, $start, $length, $charset)."...";
+            return mb_substr($str, $start, $length, $charset);
         else
             return mb_substr($str, $start, $length, $charset);
     }
     elseif(function_exists('iconv_substr')) {
         if ($suffix && strlen($str)>$length)
-            return iconv_substr($str,$start,$length,$charset)."...";
+            return iconv_substr($str,$start,$length,$charset);
         else
             return iconv_substr($str,$start,$length,$charset);
     }
@@ -1475,6 +1475,6 @@ function think_filter(&$value){
     $re['big5']   = "/[\x01-\x7f]|[\x81-\xfe]([\x40-\x7e]|\xa1-\xfe])/";
     preg_match_all($re[$charset], $str, $match);
     $slice = join("",array_slice($match[0], $start, $length));
-    if($suffix) return $slice."…";
+    if($suffix) return $slice;
     return $slice;
 }

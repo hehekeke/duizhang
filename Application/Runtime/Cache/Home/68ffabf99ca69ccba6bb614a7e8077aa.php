@@ -106,9 +106,9 @@
     </style>
 </head>
 <body>
-<form class="form-inline definewidth m20" action="/index.php/Home/Bill/queryBill" method="get">
+<form class="form-inline definewidth m20" action="/index.php/Home/Bill/queryBill" method="post">
     导入日期：
-    <input type="text" name="xm_yuefen" id="username"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;
+    <input type="text" name="xm_yuefen" class="abc input-default" value="<?php echo ($xm_yuefen); ?>">&nbsp;&nbsp;
     <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
 </form>
 <table class="table table-bordered table-hover definewidth m10">
