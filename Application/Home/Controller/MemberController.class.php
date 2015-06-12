@@ -23,7 +23,7 @@ class MemberController extends Controller{
   	//实例化
   	$member =  new \Home\Model\MemberModel();
   	//分页
-  	$res_count= $member->count();
+  	$res_count= $member->where('u_quanxian=2')->count();
     $Page = new  \Think\Page($res_count,12);
     $show = $Page->show();// 分页显示输出
 
@@ -54,7 +54,7 @@ class MemberController extends Controller{
 
   	
   	if($member->where("u_id=$_id")->setField($data)){
-  		$this->success('修改成功','/index.php/Home/Member/yiyuan_list');
+  		$this->success('修改成功','/index.php/Home/Admin/admin_list');
   	}
   }
 
@@ -62,7 +62,7 @@ class MemberController extends Controller{
   		$_id = $_GET['id'];
   		$member =  new \Home\Model\MemberModel();
   		if($member->where("u_id=$_id")->delete()){
-			$this->success('删除成功','/index.php/Home/Member/yiyuan_list');
+			$this->success('删除成功','/index.php/Home/Admin/admin_list');
 		}
   	}
 

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title></title>
@@ -36,11 +36,12 @@
 </head>
 <body>
 <form action="/index.php/Home/Member/submitEditMember" method="post" class="definewidth m20">
-<?php if(is_array($userinfo)): $i = 0; $__LIST__ = $userinfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><input type="hidden" name="id" value="<?php echo ($user["u_id"]); ?>" />
+<volist name="userinfo" id="user">
+<input type="hidden" name="id" value="{$user.u_id}" />
     <table class="table table-bordered table-hover definewidth m10">
         <tr>
             <td width="10%" class="tableleft">登录账号</td>
-            <td><input type="text" name="username" value="<?php echo ($user["u_name"]); ?>"/></td>
+            <td><input type="text" name="username" value="{$user.u_name}"/></td>
         </tr>
         <tr>
             <td class="tableleft">密码</td>
@@ -48,16 +49,16 @@
         </tr>
         <tr>
             <td class="tableleft">姓名</td>
-            <td><input type="text" name="realname" value="<?php echo ($user["u_mingzi"]); ?>"/></td>
+            <td><input type="text" name="realname" value="{$user.u_mingzi}"/></td>
         </tr>
         
         <tr>
             <td class="tableleft">账号状态</td>
             <td>
                 <input type="radio" name="status" value="1"
-                    <?php if(($user["u_kaitong"]) == "1"): ?>checked<?php endif; ?> /> 正常
+                    <eq name="user.u_kaitong" value='1'>checked</eq> /> 正常
               <input type="radio" name="status" value="0"
-                    <?php if(($user["u_kaitong"]) == "0"): ?>checked<?php endif; ?> /> 禁用
+                    <eq name="user.u_kaitong" value='0'>checked</eq> /> 禁用
             </td>
         </tr>
         <tr>
@@ -67,14 +68,15 @@
                 <button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
             </td>
         </tr>
-    </table><?php endforeach; endif; else: echo "" ;endif; ?>
+    </table>
+    </volist>
 </form>
 </body>
 </html>
 <script>
     $(function () {       
 		$('#backid').click(function(){
-				window.location.href="<?php echo U('User/index');?>";
+				window.location.href="{:U('User/index')}";
 		 });
 
     });
