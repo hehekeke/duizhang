@@ -12,7 +12,20 @@
     <script type="text/javascript" src="/src/js/ckform.js"></script>
     <script type="text/javascript" src="/src/js/common.js"></script>
 
- 
+ <script type="text/javascript">
+    function show_confirm()
+    {
+    var r=confirm("确定删除吗？");
+    if (r==true)
+      {
+      // alert("删除成功!");
+      }
+    else
+      {
+      // alert("取消了删z除!");
+      }
+    }
+ </script>
 
     <style type="text/css">
         body {
@@ -65,12 +78,14 @@
                 <td>{$m.u_mingzi}</td>
                 <td>译员用户</td>
                 <if condition="($m.u_kaitong eq 1)">
-                     <td><span style="color:green">账号正常</span>|禁用</td>
-                     <elseif condition="$m.u_kaitong eq 0"/><td><span style="color:red">已被锁定</span>|恢复</td>
+                     <td>
+                        <span style="color:green">账号正常</span>|<a href="/index.php/Home/Member/ban?id={$m.u_id}">禁用</a>
+                    </td>
+                     <elseif condition="$m.u_kaitong eq 0"/><td><span style="color:red">已被锁定</span>|<a href="/index.php/Home/Member/recover?id={$m.u_id}">恢复</a></td>
                 </if>
 
                 <td>
-                    <a href="/index.php/Home/Member/editMember?id={$m.u_id}">编辑</a>|<a href="/index.php/Home/Member/deleteMember?id={$m.u_id}">删除</a>                
+                    <a href="/index.php/Home/Member/editMember?id={$m.u_id}">编辑</a>|<a href="/index.php/Home/Member/deleteMember?id={$m.u_id}" onclick="show_confirm()">删除</a>                
                 </td>
             </tr>
         </volist>	
@@ -119,33 +134,3 @@
 </div>
 </body>
 </html>
-<script>
-    $(function () {
-        
-
-		$('#addnew').click(function(){
-
-				window.location.href="add.html";
-		 });
-
-
-    });
-
-	function del(id)
-	{
-		
-		
-		if(confirm("确定要删除吗？"))
-		{
-		
-			var url = "index.html";
-			
-			window.location.href=url;		
-		
-		}
-	
-	
-	
-	
-	}
-</script>
