@@ -128,16 +128,23 @@
           {text:'账单管理',items:[
 
               {id:'1',text:'账单导入',href:'/index.php/Home/Bill/to_import'},
-              {id:'3',text:'账单列表',href:'/index.php/home/Bill/Bill_list'}
-
+              {id:'3',text:'账单列表',href:'/index.php/home/Bill/Bill_list'},
+              {id:'10',text:'译员反馈',href:'/index.php/home/Bill/Bill_list'},
+              {id:'11',text:'账单下载',href:'/index.php/home/Bill/Bill_toDown'},
+              {id:'',text:'账单删除',href:'/index.php/home/Bill/Bill_todel'}
           ]},
           {text:'译员中心',items:[
               {id:'10',text:'资料维护',href:'/index.php/Home/News/news'},
               {id:'11',text:'本期账单',href:'Role/index.html'}
              
           ]
+          },
+          {text:'登录控制',items:[
+              {id:'',text:'登录控制',href:'/index.php/Home/News/news'}
+
+          ]
           }
-          ,]},
+          ]},
           {id:'7',homePage : '9',menu:[{text:'业务管理',items:[{id:'9',text:'查询业务',href:'Node/index.html'}]}]}];
       new PageUtil.MainPage({
         modulesConfig : config

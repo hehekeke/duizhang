@@ -141,4 +141,81 @@ class BillController extends Controller {
         $this->display("import_data_list");
     }
 
+    /*
+     * 到达账单下载页面
+     */
+    public function Bill_toDown(){
+        $this->display("Bill_Down");
+    }
+    /*
+     * 账单下载
+     */
+    public function Bill_Down(){
+        $xm_yuefen = $_POST['xm_yuefen'];
+        $duizhangdan = M("duizhangdan");
+        $res = $duizhangdan->where("xm_yuefen='".$xm_yuefen."'")->select();
+//        echo $duizhangdan->getLastSql();
+//        var_dump($res);
+        $str = "译员名称\t项目编号\t项目名称\t翻译方向\t承接时间\t提交时间\t价格类型\t字数\t金额\t总价\t状态\t日期\t金额\t备注\n";
+        $str = iconv('utf-8','gb2312',$str);
+        $User = M("user_db");
+        for($i=0;$i<count($res);$i++){
+            $xm_id = iconv('utf-8','gb2312',$res[$i]['xm_id']);
+            $xm_myd= iconv('utf-8','gb2312',$res[$i]['xm_myd']);
+            $xm_fyfx = iconv('utf-8','gb2312',$res[$i]['xm_fyfx']);
+            $xm_cjsj = iconv('utf-8','gb2312',$res[$i]['xm_cjsj']);
+            $xm_tjsj = iconv('utf-8','gb2312',$res[$i]['xm_tjsj']);
+            $danjia = iconv('utf-8','gb2312',"单价");
+             $xm_zs = iconv('utf-8','gb2312',$res[$i]['xm_zs']);
+             $xm_dj = iconv('utf-8','gb2312',$res[$i]['xm_dj']);
+             $xm_je = iconv('utf-8','gb2312',$res[$i]['xm_je']);
+            //这个是寻找对应的用户民称
+            $user_data =$User->where("u_id=".$res[$i]['xm_userid'])->field("u_mingzi")->find();
+            unset($xm_userid);
+            $xm_userid = $user_data["u_mingzi"];
+            $xm_userid = iconv('utf-8','gb2312',$xm_userid);
+
+
+            $str .=  $xm_userid."\t".$xm_id ."\t".$xm_myd ."\t".$xm_fyfx."\t".$xm_cjsj."\t".$xm_tjsj."\t".
+                $danjia."\t".$xm_zs."\t".$xm_dj."\t".$xm_je."\t\n";
+        }
+        $filename = $xm_yuefen.'.xls';
+        $this->exportExcel($filename,$str);
+
+    }
+
+    function exportExcel($filename,$content){
+        header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+        header("Content-Type: application/vnd.ms-execl");
+        header("Content-Type: application/force-download");
+        header("Content-Type: application/download");
+        header("Content-Disposition: attachment; filename=".$filename);
+        header("Content-Transfer-Encoding: binary");
+        header("Pragma: no-cache");
+        header("Expires: 0");
+        echo $content;
+    }
+
+    /*
+     * 到达账单删除页面
+     */
+    public function Bill_todel(){
+        $this->display("Bill_del");
+    }
+    /*
+     * 删除账单
+     */
+    public function bill_del_byDate(){
+        $xm_yuefen = $_POST['xm_yuefen'];
+        $duizhangdan = M("duizhangdan");
+        $result = $duizhangdan->where("xm_yuefen = '".$xm_yuefen."'")->delete();
+//        echo $duizhangdan->getLastSql();
+        if($result == false){
+           echo "删除错误";
+        }else{
+            //这个需要对跳转优化
+            $this->Bill_list();
+        }
+    }
+
 }
