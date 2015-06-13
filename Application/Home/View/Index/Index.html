@@ -34,20 +34,25 @@
       var config = [{id:'1',menu:[
           {text:'系统管理',items:[
 
-              {id:'1',text:'译员管理',href:'/index.php/Home/Member/yiyuan_list'},
+              {id:'10',text:'译员管理',href:'/index.php/Home/Member/yiyuan_list'},
               {id:'2',text:'管理员列表',href:'/index.php/Home/Admin/admin_list'},
-              {id:'3',text:'账单列表',href:'/index.php/home/Bill/Bill_list'},
+
               {id:'4',text:'译员反馈',href:''},
               {id:'5',text:'财务管理',href:''},
               {id:'6',text:'历史账单删除',href:''},
-              {id:'7',text:'数据库备份',href:''},
+              {id:'7',text:'数据库备份',href:'/index.php/Home/Backup/backup'},
               {id:'8',text:'系统通知',href:''},
               {id:'9',text:'代译员确认',href:''},
-          ]
-          },
+          ]},
+          {text:'账单管理',items:[
+
+              {id:'1',text:'账单导入',href:'/index.php/Home/Bill/to_import'},
+              {id:'3',text:'账单列表',href:'/index.php/home/Bill/Bill_list'}
+
+          ]},
           {text:'译员中心',items:[
-              {id:'10',text:'资料维护',href:'/index.php/Home/News'},
-              {id:'11',text:'本期账单',href:'Role/index.html'},
+              {id:'10',text:'资料维护',href:'/index.php/Home/News/news'},
+              {id:'11',text:'本期账单',href:'Role/index.html'}
              
           ]
           }

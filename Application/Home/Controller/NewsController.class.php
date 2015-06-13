@@ -12,12 +12,19 @@ class NewsController extends Controller{
 
 	public function news(){
 
+		$this->getNews();
+
 		$this->display('news');
 	}
 
 	//查询新闻
 	public function getNews(){
 		
+		$_news = new  \Home\Model\NewsModel();
+		$data_news = $_news->select();
+		// var_dump($data_newstitle);
+		// var_dump($data_news);
+		$this->assign('news',$data_news);
 	}
 	
 }

@@ -107,8 +107,12 @@
 </head>
 <body>
 <form class="form-inline definewidth m20" action="/index.php/Home/Bill/queryBill" method="get">
-    导入日期：
-    <input type="text" name="xm_yuefen" class="abc input-default" value="<?php echo ($xm_yuefen); ?>">&nbsp;&nbsp;
+    项目编号：
+    <input type="text" name="xm_id" class="abc input-default" value="<?php echo ($xm_id); ?>">&nbsp;&nbsp;<br/>
+
+    姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：
+    <input type="text" name="xm_userid" class="abc input-default" value="<?php echo ($xm_userid); ?>">&nbsp;&nbsp;
+
     <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
 </form>
 <table class="table table-bordered table-hover definewidth m10">
@@ -135,14 +139,14 @@
             <td><?php echo ($vo['xm_yuefen']); ?></td>
 
             <td style="max-width: 70px;"><?php echo ($vo['xm_id']); ?></td>
-            <td>王宇奇</td>
-            <td><?php echo ($vo['xm_fyfx']); ?></td>
+            <td><?php echo ($vo['xm_userid']); ?></td>
+            <td><?php echo (msubstr($vo['xm_fyfx'],0,10)); ?></td>
             <td><?php echo (msubstr($vo['xm_cjsj'],0,10)); ?></td>
             <td><?php echo (msubstr($vo['xm_tjsj'],0,10)); ?></td>
             <td><?php echo ($vo['xm_zs']); ?></td>
             <td><?php echo ($vo['xm_dj']); ?></td>
             <td><?php echo ($vo['xm_je']); ?></td>
-            <td style="max-width: 100px;"><?php echo ($vo['xm_myd']); ?></td>
+            <td style="max-width: 100px;"><?php echo (msubstr($vo['xm_myd'],0,14)); ?></td>
             <td style="max-width: 100px;" ><?php echo (msubstr_san($vo['xm_cjfw'],0,6)); ?></td>
             <td  style="max-width: 24px;"></td>
             <td>

@@ -4,12 +4,16 @@
     <title></title>
     <meta charset="UTF-8">
     <include file="Public:commit" />
+
 </head>
 <body>
-<form class="form-inline definewidth m20" action="index.html" method="get">    
+<form class="form-inline definewidth m20" action="index.php/Home/Member/add" method="get">    
     用户名称：
     <input type="text" name="username" id="username"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
-    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增用户</button>
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; 
+    <button type="button" name="add" class="btn btn-success" id="addnew">
+      新增用户
+    </button>
 </form>
 <table class="table table-bordered table-hover definewidth m10">
     <thead>
@@ -29,7 +33,7 @@
                 <td>{$m.u_mingzi}</td>
                 <td>译员用户</td>
                 <if condition="($m.u_kaitong eq 1)">
-                     <td><span style="color:green">账号正常</span>|禁用</td>
+                     <td><span style="color:green">账号正常</span>|<a href="" class="change" id="{$m.u_id}1" style="color:#000000">禁用</a></td>
                      <elseif condition="$m.u_kaitong eq 0"/><td><span style="color:red">已被锁定</span>|恢复</td>
                 </if>
 
@@ -104,11 +108,27 @@
             }
 
         });
+
+        $(".change").click(function(){
+                var id= $(this).attr("id");
+//                $.post("http://localhost/index.php/home/Member/deleteMember",{id:id},function(data){
+//                    if(data == 1){
+//                        alert("删除成功");
+//                        window.location.reload();
+//
+//                    }else if(data == 0){
+//                        alert("删除失败");
+//                    }
+//                });
+                return false;
+        });
+
+
         
 
 		$('#addnew').click(function(){
 
-				window.location.href="add.html";
+				window.location.href="/index.php/Home/Member/addMember";
 		 });
 
 

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <include file="Public:commit" />
+</head>
+<body>
+<form action="/index.php/Home/Bill/import" method="post" class="definewidth m20" enctype="multipart/form-data">
+    <tr>
+        <td width="10%" class="tableleft">导入的账单</td>
+        <td><input type="file" name="import"/></td>
+    </tr>
+    <tr>
+        <td class="tableleft"></td>
+        <td>
+            <button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+        </td>
+    </tr>
+</form>
+</body>
+</html>
