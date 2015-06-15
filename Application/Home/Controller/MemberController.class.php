@@ -96,6 +96,17 @@ class MemberController extends Controller{
       
     }
   }
+//搜索
+  public function search(){
+    $member =  new \Home\Model\MemberModel();
+    $where['u_name']=array('like',"%{$_GET['u_name']}%");
+
+    $data = $member->where($where)->select();
+    // var_dump($data);
+    $this->assign('list',$data);
+    $this->display('yiyuan_list');
+
+  }
 //编辑用户信息
   public function editMember(){
   	//
