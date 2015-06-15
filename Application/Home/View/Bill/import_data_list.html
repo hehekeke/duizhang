@@ -41,7 +41,7 @@
         <th style="max-width: 40px;">字数</th>
         <th style="max-width: 40px;">单价</th>
         <th style="max-width: 40px;">金额</th>
-        <th>文件名</th>
+        <th colspan="2">文件名</th>
         <th>承接范围</th>
     </tr>
     </thead>
@@ -51,12 +51,12 @@
             <td style="max-width: 35px;"><input  style="max-width: 30px;" type="text" name="xm_userid" value="{$vo['xm_userid']}"/></td>
             <td style="max-width: 35px;"><input  style="max-width: 80px;" type="text" name="xm_id" value="{$vo['xm_id']}"/></td>
             <td style="max-width: 35px;"><input  style="max-width: 75px;" type="text" name="xm_fyfx" value="{$vo['xm_fyfx']}"/></td>
-            <td>{$vo['xm_cjsj']|msubstr=0,10}</td>
+            <td style="max-width: 35px;"><input  style="max-width: 75px;" type="text" name="xm_cjsj" value="{$vo['xm_cjsj']}"/></td>
             <td>{$vo['xm_tjsj']|msubstr=0,10}</td>
             <td style="max-width: 35px;"><input  style="max-width: 40px;" type="text" name="xm_zs" value="{$vo['xm_zs']}"/></td>
             <td style="max-width: 35px;"><input  style="max-width: 40px;" type="text" name="xm_dj" value="{$vo['xm_dj']}"/></td>
             <td style="max-width: 35px;"><input  style="max-width: 60px;" type="text" name="xm_je" value="{$vo['xm_je']}"/></td>
-            <td ><input  style="max-width: 100px;" type="text" name="xm_myd" value="{$vo['xm_myd']}"/></td>
+            <td colspan="2" ><input  style="max-width: 100px;" type="text" name="xm_myd" value="{$vo['xm_myd']}"/></td>
             <td><input  style="max-width: 90px;" type="text" name="xm_cjfw" value="{$vo['xm_cjfw']}"/></td>
         </tr>
     </volist>

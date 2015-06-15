@@ -150,9 +150,9 @@
             <td style="max-width: 100px;" ><?php echo (msubstr_san($vo['xm_cjfw'],0,6)); ?></td>
             <td  style="max-width: 24px;"></td>
             <td>
-                <?php if($vo['xm_fkzt'] == 3): ?><span style="color: green">已经确定</span>
+                <?php if($vo['xm_fkzt'] == 3): ?><span style="color: green">已付款</span>
 
-                    <?php else: ?><span style="color: red">未确定</span><?php endif; ?>
+                    <?php else: ?><span style="color: red">未未处理</span><?php endif; ?>
             </td>
             <td>
                 <a href="http://localhost/index.php/home/Bill/Bill_toupdate/id/<?php echo ($vo['id']); ?>">修改</a>

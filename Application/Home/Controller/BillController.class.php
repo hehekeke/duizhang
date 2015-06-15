@@ -246,6 +246,12 @@ class BillController extends Controller {
      * 到达
      */
     public function Bill_tochange(){
+     $this->display("Bill_change");
+    }
+
+    public function Bill_change(){
+        $duizhangdan = M("duizhangdan");
+        $res = $duizhangdan->where('xm_fkzt=3')->save(array('xm_fkzt'=>'4'));
 
     }
 
