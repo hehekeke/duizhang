@@ -131,6 +131,8 @@
               {id:'3',text:'账单列表',href:'/index.php/home/Bill/Bill_list'},
               {id:'10',text:'译员反馈',href:'/index.php/home/Bill/Bill_list'},
               {id:'11',text:'账单下载',href:'/index.php/home/Bill/Bill_toDown'},
+              {id:'',text:' 标注已付款',href:'/index.php/home/Bill/Bill_tochange'},
+
               {id:'6',text:'历史账单删除',href:'/index.php/home/Bill/Bill_todel'}
           ]},
           {text:'译员中心',items:[
