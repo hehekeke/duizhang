@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/src/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    <script type="text/javascript" src="/src/js/jquery.js"></script>
+    <script type="text/javascript" src="/src/js/jquery.sorted.js"></script>
+    <script type="text/javascript" src="/src/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/src/js/ckform.js"></script>
+    <script type="text/javascript" src="/src/js/common.js"></script>
+
+ 
+
+    <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+        #content{
+            width: 100%;
+        }
+       
+        .g{
+            width: 100%;
+            height: 28px;
+            background-color: #e5eaf3;
+
+        }
+        .g1{
+            height: 23px;
+            width: 80px;
+            background-color: #fcfcfc;
+            float: left;
+            margin: 5px 0 0 3px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 23px;
+        }
+        .tz{
+            width: 100%;
+            height: 445px;
+            margin-top: 5px;
+            margin-left: 8px;
+            border: 1px solid #ccc;
+
+        }
+        .content{
+            padding:25px 0 0 15px;
+            line-height: 28px;
+            font-size: 13px;
+            color:#222222;
+        }
+        .content textarea{
+            width: 486px;
+            height: 260px;
+            padding: 8px 8px;
+            font-size: 12px;
+            resize:none;
+        }
+        .info{
+            width: 100%;
+            margin:10px 0 0 10px;
+        }
+        .info span{
+            width: 100px;
+            padding: 0 0 5px 0;
+        }
+        div.info input{
+            width: 450px;
+            font-size: 12px;
+        }
+        .login{
+            width: 100%;
+            margin: 0 0 0 12px;
+        }
+        .submit{
+            margin:5px 0 0 12px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+    
+        <div class="tz">
+            <div class="g">
+                 <div class="g1">系统通知</div>
+            </div>
+            <form action="/index.php/Home/News/update" method="post">
+            <volist name="news" id="vo">
+             <input type="hidden" name="u_id" value="{$user.u_id}" />
+                <div class="info"><span>消息一:</span><input type="text" value="{$vo.title}" name="title" /></div>
+                <div class="content"><textarea name="content">{$vo.content}</textarea></div>
+            </volist>
+                <div class="login">
+                    是否关闭网站用户登录：
+                    <input type="hidden" name="id" value="1" />
+                    <input type="radio" name="open" value="1">开通
+                    <input type="radio" name="open" value="0">关闭
+                </div>
+                <div class="submit"><input type="submit" name="submit" value="修改系统通知"></div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
