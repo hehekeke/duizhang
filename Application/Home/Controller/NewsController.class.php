@@ -26,5 +26,20 @@ class NewsController extends Controller{
 		// var_dump($data_news);
 		$this->assign('news',$data_news);
 	}
+	//update news
+	public function updateNews(){
+		$this->getNews();
+		$this->display('sysInfo');
+	}
+	public function update(){
+		$_news = new  \Home\Model\NewsModel();
+		$_news->create();
+		
+		$_open = D('config');
+		$_open->create();
+		$_open->save();
+		$_news->save();
+		$this->news();
 	
+	}
 }

@@ -140,7 +140,7 @@
           ]
           },
           {text:'系统参数',items:[
-              {id:'',text:'系统通知',href:'/index.php/Home/News/news'}
+              {id:'',text:'系统通知',href:'/index.php/Home/News/updateNews'}
 
           ]
           }
