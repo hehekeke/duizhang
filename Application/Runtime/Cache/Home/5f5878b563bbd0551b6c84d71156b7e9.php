@@ -88,14 +88,18 @@
 </html>
  </head>
  <body>
-
+  <style type="text/css">
+    .dl-log a:hover{
+      color: yellow;
+    }
+  </style>
   <div class="header">
     
       <div class="dl-title">
        <!--<img src="/chinapost/Public/assets/img/top.png">-->
       </div>
 
-    <div class="dl-log">欢迎您，<span class="dl-log-user">root</span><a href="/chinapost/index.php?m=Public&a=logout" title="退出系统" class="dl-log-quit">[退出]</a>
+    <div class="dl-log">欢迎您，<span class="dl-log-user"><?php echo ($username); ?></span><a href="/index.php/Home/Login/logout" title="退出系统" class="dl-log-quit">[退出]</a>
     </div>
   </div>
    <div class="content">
@@ -142,7 +146,6 @@
           },
           {text:'系统参数',items:[
               {id:'',text:'系统通知',href:'/index.php/Home/News/updateNews'}
-
           ]
           }
           ]},
