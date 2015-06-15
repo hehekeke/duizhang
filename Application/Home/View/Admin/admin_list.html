@@ -118,7 +118,7 @@
         $(".del").click(function(){
             if(confirm("确定要删除吗？")){
                 var id= $(this).attr("id");
-                $.post("http://localhost/index.php/home/Admin/deleteMember",{id:id},function(data){
+                $.post("/index.php/home/Admin/deleteMember",{id:id},function(data){
                     if(data == 0){
                         alert("删除成功");
                         window.location.reload();
