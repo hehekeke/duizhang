@@ -35,39 +35,94 @@
     </style>
 </head>
 <body>
-<form action="/index.php/Home/Member/submitEditMember" method="post" class="definewidth m20">
+<form action="/index.php/Home/Member/submitEditMember" method="POST" class="definewidth m20">
 <volist name="userinfo" id="user">
-<input type="hidden" name="id" value="{$user.u_id}" />
+<input type="hidden" name="u_id" value="{$user.u_id}" />
     <table class="table table-bordered table-hover definewidth m10">
-        <tr>
-            <td width="10%" class="tableleft">登录账号</td>
-            <td><input type="text" name="username" value="{$user.u_name}"/></td>
-        </tr>
-        <tr>
-            <td class="tableleft">密码</td>
-            <td><input type="password" name="password"/></td>
-        </tr>
-        <tr>
-            <td class="tableleft">姓名</td>
-            <td><input type="text" name="realname" value="{$user.u_mingzi}"/></td>
-        </tr>
-        
-        <tr>
-            <td class="tableleft">账号状态</td>
-            <td>
-                <input type="radio" name="status" value="1"
-                    <eq name="user.u_kaitong" value='1'>checked</eq> /> 正常
-              <input type="radio" name="status" value="0"
-                    <eq name="user.u_kaitong" value='0'>checked</eq> /> 禁用
-            </td>
-        </tr>
-        <tr>
-            <td class="tableleft"></td>
-            <td>
-                <button type="submit" class="btn btn-primary" type="button">保存</button>				 &nbsp;&nbsp;
-                <button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
-            </td>
-        </tr>
+       <tr>
+        <td width="10%" class="tableleft">用户名</td>
+        <td><input type="text" name="u_name" value="{$user.u_name}" readonly="readonly"/></td>
+
+    </tr>
+    <tr>
+        <td class="tableleft">真实姓名</td>
+        <td><input type="text" name="u_mingzi" value="{$user.u_mingzi}"/></td>
+    </tr>
+    <tr>
+        <td class="tableleft">密码</td>
+        <td><input type="password" name="u_pass" value="{$user.u_pass}"/></td>
+    </tr>
+   
+    <tr>
+        <td class="tableleft">启用账号</td>
+
+    <if condition="($user.u_kaitong eq 1)">
+         <td>
+           <input type="radio" name="u_kaitong" value="1" checked/> 启用
+           <input type="radio" name="u_kaitong" value="0"/> 禁用
+        </td>
+         <elseif condition="$user.u_kaitong eq 0"/>
+        <td>
+           <input type="radio" name="u_kaitong" value="1" /> 启用
+           <input type="radio" name="u_kaitong" value="0" checked/> 禁用
+        </td>
+    </if>
+    </tr>
+     <tr>
+        <td class="tableleft">用户组</td>
+        <td>
+           <input type="radio" name="u_quanxian" value="2" checked> 译员组
+           <input type="radio" name="u_quanxian" value="1"/> 管理员组
+        </td>
+    </tr>
+
+    <tr>
+        <td width="10%" class="tableleft">账户名</td>
+        <td><input type="text" name="u_zhm"  value="{$user.u_zhm}"/></td>
+    </tr>
+    <tr>
+        <td class="tableleft">开户行</td>
+        <td><input type="text" name="u_khh" value="{$user.u_khh}"/></td>
+    </tr>
+    <tr>
+        <td class="tableleft">账号/卡号</td>
+        <td><input type="text" name="u_kh"  value="{$user.u_kh}"/></td>
+    </tr>
+     <tr>
+        <td class="tableleft">身份证号</td>
+        <td><input type="text" name="u_sfzh"value="{$user.u_sfzh}"/></td>
+    </tr>
+
+    <!-- 个人基本信息 -->
+
+    <tr>
+        <td width="10%" class="tableleft">语言背景</td>
+        <td><input type="text" name="u_yuyan" value="{$user.u_yuyan}"/></td>
+    </tr>
+    <tr>
+        <td class="tableleft">专业背景</td>
+        <td><input type="text" name="u_zhuanye" value="{$user.u_zhuanye}"/></td>
+    </tr>
+     <tr>
+        <td width="10%" class="tableleft">毕业院校</td>
+        <td><input type="text" name="u_biye" value="{$user.u_biye}"/></td>
+    </tr>
+    <tr>
+        <td class="tableleft">联系方式</td>
+        <td><input type="text" name="u_tel" value="{$user.u_tel}"/></td>
+    </tr>
+     <tr>
+        <td width="10%" class="tableleft">译员照片</td>
+        <td><input type="file" name="u_pic"/></td>
+    </tr>
+   
+
+    <tr>
+        <td class="tableleft"></td>
+        <td>
+            <button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+        </td>
+    </tr>
     </table>
     </volist>
 </form>

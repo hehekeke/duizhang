@@ -139,8 +139,8 @@
              
           ]
           },
-          {text:'登录控制',items:[
-              {id:'',text:'登录控制',href:'/index.php/Home/News/news'}
+          {text:'系统参数',items:[
+              {id:'',text:'系统通知',href:'/index.php/Home/News/news'}
 
           ]
           }

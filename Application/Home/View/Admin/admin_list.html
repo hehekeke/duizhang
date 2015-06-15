@@ -60,6 +60,10 @@
         padding-top: 2px;
      
     }
+     .btn a{
+            text-decoration: none;
+            color:#fff;
+        }
 </style>
 
 </head>
@@ -67,8 +71,9 @@
 <form class="form-inline definewidth m20" action="index.html" method="get">    
     用户名称：
     <input type="text" name="username" id="username"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
+
     <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
-    <button type="button" class="btn btn-success" id="addnew">新增用户</button>
+
 </form>
 <table class="table table-bordered table-hover definewidth m10">
     <thead>
@@ -89,8 +94,10 @@
                 <td>{$m.u_mingzi}</td>
                 <td>管理员</td>
                 <if condition="($m.u_kaitong eq 1)">
-                     <td><span style="color:green">账号正常</span>|禁用</td>
-                     <elseif condition="$m.u_kaitong eq 0"/><td><span style="color:red">已被锁定</span>|恢复</td>
+                     <td>
+                        <span style="color:green">账号正常</span>|<a href="/index.php/Home/Admin/ban?id={$m.u_id}">禁用</a>
+                    </td>
+                     <elseif condition="$m.u_kaitong eq 0"/><td><span style="color:red">已被锁定</span>|<a href="/index.php/Home/Admin/recover?id={$m.u_id}">恢复</a></td>
                 </if>
 
                 <td>
