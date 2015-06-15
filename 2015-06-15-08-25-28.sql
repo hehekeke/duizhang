@@ -7853,7 +7853,7 @@ CREATE TABLE `user_db` (
   `u_sfzh` varchar(255) DEFAULT NULL,
   `u_khss` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`u_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=884 DEFAULT CHARSET=gbk;
+) ENGINE=InnoDB AUTO_INCREMENT=882 DEFAULT CHARSET=gbk;
 insert into `user_db`(`u_id`,`u_name`,`u_pass`,`u_quanxian`,`u_kaitong`,`u_mingzi`,`u_yuyan`,`u_zhuanye`,`u_biye`,`u_tel`,`u_pic`,`u_dengji`,`u_buzu`,`u_zhm`,`u_khh`,`u_kh`,`u_sfzh`,`u_khss`) values('2','乐译通','123456','2','1','乐译通翻译公司','乐译通翻译公司','乐译通翻译公司','乐译通翻译公司','15888888888','','5','有待提高','','','','','');
 insert into `user_db`(`u_id`,`u_name`,`u_pass`,`u_quanxian`,`u_kaitong`,`u_mingzi`,`u_yuyan`,`u_zhuanye`,`u_biye`,`u_tel`,`u_pic`,`u_dengji`,`u_buzu`,`u_zhm`,`u_khh`,`u_kh`,`u_sfzh`,`u_khss`) values('20','96limin','LM9559','2','1','李敏','法语','法律','法国克莱蒙一大','15071259134','','1','','李敏','湖北省武汉市建设银行武汉市江汉区复兴村分理处','6227002871190359559','420104198006102426','');
 insert into `user_db`(`u_id`,`u_name`,`u_pass`,`u_quanxian`,`u_kaitong`,`u_mingzi`,`u_yuyan`,`u_zhuanye`,`u_biye`,`u_tel`,`u_pic`,`u_dengji`,`u_buzu`,`u_zhm`,`u_khh`,`u_kh`,`u_sfzh`,`u_khss`) values('21','95lilinghui','LLH2028','2','1','李灵辉','中英双译','英语语言文学专业','湖南大学','136 6008 4591','','1','','李灵辉','中国农业银行广东省广州海珠支行','6228 4800 8842 5359 671','432503197404128642','广东市广州市');

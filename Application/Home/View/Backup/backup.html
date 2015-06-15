@@ -3,75 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>">
 <title>数据库维护</title>
-
-<script language="javascript">
-    function date(){
-
-        var now=new Date();
-        document.write(now.year()+"."+now.month()+"."+now.day());
-    }
-function LoadUrl(surl){
-        $.get('__URL__/click',{'zhi':surl},function(data){
-           alert(data);
-        });
-    }
-
-function HideObj(objname){
-   var obj = document.getElementByIdx_x(objname);
-   obj.style.display = "none";
-}
-
-//获得选中文件的数据表
-
-function getCheckboxItem(){
-var myform = document.form1;
-var allSel="";
-if(myform.tables.value) return myform.tables.value;
-for(i=0;i<myform.tables.length;i++)
-{
-if(myform.tables[i].checked){
-if(allSel=="")
-allSel=myform.tables[i].value;
-else
-allSel=allSel+","+myform.tables[i].value;
-}
-}
-return allSel;
-}
-
-//反选
-function ReSel(){
-var myform = document.form1;
-for(i=0;i<myform.tables.length;i++){
-if(myform.tables[i].checked) myform.tables[i].checked = false;
-else myform.tables[i].checked = true;
-}
-}
-
-//全选
-function SelAll(){
-var myform = document.form1;
-for(i=0;i<myform.tables.length;i++){
-myform.tables[i].checked = true;
-}
-}
-
-//取消
-function NoneSel(){
-var myform = document.form1;
-for(i=0;i<myform.tables.length;i++){
-myform.tables[i].checked = false;
-}
-}
-
-function checkSubmit()
-{
-var myform = document.form1;
-myform.tablearr.value = getCheckboxItem();
-return true;
-}
-
-</script>
 <style type="text/css">
 #content{
     width: 100%;
@@ -170,11 +101,8 @@ return true;
              <span>相关提示：</span><br/>
             默认删除前三个月之前的数据。<br/>
             如果本月为2012年8月份上传的7月份账单，那么如果要删除2012年5月份之前的账单(不包含5月份)，请输入201205，我们将删除2012年5月份之前的所有数据。<br/>
-            备份后数据库名称：<input type="text"><span><div class="bake">  <a href="/index.php/Home/Backup/bakeData">备份</a> </div></span>
+            备份后数据库名称：<input type="text" value="{$sql}" readOnly="true" ><span><div class="bake">  <a href="/index.php/Home/Backup/bakeData/sql/{$sql}">备份</a> </div></span>
         </div>
-
-
-
 
         <div class="success">{$success}</div>
     </div>

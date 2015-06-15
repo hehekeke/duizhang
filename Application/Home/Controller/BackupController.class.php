@@ -9,8 +9,9 @@ class BackupController extends Controller{
       $data =  $db->query($sql = 'show tables');
 
       $this->assign('re',$data);
-      echo date("y-m-d-h-i-s",time());
-//      $this->display('backup');
+      $sql = date("Y-m-d-h-i-s",time()).".sql";
+      $this->assign('sql',$sql);
+      $this->display('backup');
   }
 
     public function bakeData(){
@@ -51,8 +52,8 @@ class BackupController extends Controller{
                 $mysql .= "insert into `$table`($keys) values($vals);\r\n";
             }
         }
-        $filename = $dbname . date('Ymjgi') . ".sql"; //存放路径，默认存放到项目最外层
-        $fp = fopen($filename, 'w');
+        $sql = $_GET['sql'];
+        $fp = fopen($sql, 'w');
         fputs($fp, $mysql);
         fclose($fp);
         $this->assign('success','备份成功');

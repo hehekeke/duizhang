@@ -3,19 +3,119 @@
 <head>
     <title></title>
     <include file="Public:commit" />
+    <style type="text/css">
+        #content{
+            width: 100%;
+            margin-bottom: 5px;;
+        }
+        .gonggao{
+            width: 100%;
+            height: 90px;
+            margin-top: 10px;
+            margin-left: 8px;
+            border: 1px solid #ccc;
+
+        }
+        .g{
+            width: 100%;
+            height: 28px;
+            background-color: #e5eaf3;
+
+        }
+        .g1{
+            height: 23px;
+            width: 110px;
+            background-color: #fcfcfc;
+            float: left;
+            margin: 5px 0 0 3px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 23px;
+        }
+        .tz{
+            width: 100%;
+
+            margin-top: 5px;
+            margin-left: 8px;
+            border: 1px solid #ccc;
+
+        }
+        .title{
+            color: red;
+            padding: 20px 0 0 10px;
+            font-style: 14px;
+        }
+        .content{
+            padding:25px 0 0 15px;
+            line-height: 28px;
+            font-size: 13px;
+            color:#222222;
+        }
+        .content span{
+            font-size: 13px;
+            font-weight: blod;
+            color:red;
+        }
+        .table{
+            width: 100%;padding-left: 8px;
+        }
+        .bake{
+            padding: 5px 0 10px 15px;
+        }
+        .bake a{
+            width: 40px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            background-color: #ccc;
+            text-decoration: none;
+            color:black;
+            font-weight:blod;
+            display: block;
+            border: 1px solid #000000;
+            font-size: 15px;
+
+        }
+        .bake a:hover{
+            color:#fff;
+            font-weight: blod;
+        }
+        .success{
+            width: 100%;
+            padding-left: 10px;
+            font-size: 12px;
+            color:red;
+            padding-bottom: 10px;
+        }
+    </style>
+
 </head>
 <body>
-<form action="/index.php/Home/Bill/import" method="post" class="definewidth m20" enctype="multipart/form-data">
-    <tr>
-        <td width="10%" class="tableleft">导入的账单</td>
-        <td><input type="file" name="import"/></td>
-    </tr>
-    <tr>
-        <td class="tableleft"></td>
-        <td>
-            <button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
-        </td>
-    </tr>
-</form>
+
+
+
+<div id="content">
+    <form action="/index.php/Home/Bill/import" method="post" class="definewidth m20" enctype="multipart/form-data">
+        <div class="tz">
+            <div class="g">
+                <div class="g1">确认账单下载</div>
+            </div>
+            <div class="content">
+                <span style="color: #000000">相关提示：</span><br/>
+                <span> 导入必须按照系统指定的格式进行导入，不然会出现错误。<a href="/index.php/Home/Bill/down_moban"> 点击下载导入模板。</a></span><br/>
+                <span>按照模板文件里面的格式进行添加，请仔细确认一下各个输入框里面的的格式。</span><br/>
+                <span>excel里面第一行自动去除，请不要手动删除，删除后，系统将无法导入。</span><br/>
+                <span> 必须在本excel模板里面进行复制添，不然会出错。</span><br/>
+                <span> 各个格式已经在系统中标注，如果有什么不清楚的，请联系总管理员。</span><br/>
+                导入时间：<input type="text" name="xm_yuefen" class="abc input-default" value="{$time}" readonly="true" style="width: 60px;"> 无需修改。<br>
+                上传表格：<td><input type="file" name="import"/></td>
+                <button type="submit" class="btn btn-primary">立即上传</button>&nbsp;&nbsp;
+            </div>
+            <div class="success">{$success}</div>
+        </div>
+    </form>
+</div>
+
+
 </body>
 </html>

@@ -108,6 +108,8 @@ class BillController extends Controller {
      * 到达 对账单导入
      */
     public function to_import(){
+        $time = date("Ym",time());
+        $this->assign("time",$time);
         $this->display("import");
     }
     /*
@@ -154,33 +156,36 @@ class BillController extends Controller {
         $xm_yuefen = $_POST['xm_yuefen'];
         $duizhangdan = M("duizhangdan");
         $res = $duizhangdan->where("xm_yuefen='".$xm_yuefen."'")->select();
-//        echo $duizhangdan->getLastSql();
-//        var_dump($res);
-        $str = "译员名称\t项目编号\t项目名称\t翻译方向\t承接时间\t提交时间\t价格类型\t字数\t金额\t总价\t状态\t日期\t金额\t备注\n";
-        $str = iconv('utf-8','gb2312',$str);
-        $User = M("user_db");
-        for($i=0;$i<count($res);$i++){
-            $xm_id = iconv('utf-8','gb2312',$res[$i]['xm_id']);
-            $xm_myd= iconv('utf-8','gb2312',$res[$i]['xm_myd']);
-            $xm_fyfx = iconv('utf-8','gb2312',$res[$i]['xm_fyfx']);
-            $xm_cjsj = iconv('utf-8','gb2312',$res[$i]['xm_cjsj']);
-            $xm_tjsj = iconv('utf-8','gb2312',$res[$i]['xm_tjsj']);
-            $danjia = iconv('utf-8','gb2312',"单价");
-             $xm_zs = iconv('utf-8','gb2312',$res[$i]['xm_zs']);
-             $xm_dj = iconv('utf-8','gb2312',$res[$i]['xm_dj']);
-             $xm_je = iconv('utf-8','gb2312',$res[$i]['xm_je']);
-            //这个是寻找对应的用户民称
-            $user_data =$User->where("u_id=".$res[$i]['xm_userid'])->field("u_mingzi")->find();
-            unset($xm_userid);
-            $xm_userid = $user_data["u_mingzi"];
-            $xm_userid = iconv('utf-8','gb2312',$xm_userid);
+        if(count($res) == 0){
+            $this->assign('success',$xm_yuefen.'无账单数据');
+            $this->display("Bill_Down");
+        }else{
+            $str = "译员名称\t项目编号\t项目名称\t翻译方向\t承接时间\t提交时间\t价格类型\t字数\t金额\t总价\t状态\t日期\t金额\t备注\n";
+            $str = iconv('utf-8','gb2312',$str);
+            $User = M("user_db");
+            for($i=0;$i<count($res);$i++){
+                $xm_id = iconv('utf-8','gb2312',$res[$i]['xm_id']);
+                $xm_myd= iconv('utf-8','gb2312',$res[$i]['xm_myd']);
+                $xm_fyfx = iconv('utf-8','gb2312',$res[$i]['xm_fyfx']);
+                $xm_cjsj = iconv('utf-8','gb2312',$res[$i]['xm_cjsj']);
+                $xm_tjsj = iconv('utf-8','gb2312',$res[$i]['xm_tjsj']);
+                $danjia = iconv('utf-8','gb2312',"单价");
+                $xm_zs = iconv('utf-8','gb2312',$res[$i]['xm_zs']);
+                $xm_dj = iconv('utf-8','gb2312',$res[$i]['xm_dj']);
+                $xm_je = iconv('utf-8','gb2312',$res[$i]['xm_je']);
+                //这个是寻找对应的用户民称
+                $user_data =$User->where("u_id=".$res[$i]['xm_userid'])->field("u_mingzi")->find();
+                unset($xm_userid);
+                $xm_userid = $user_data["u_mingzi"];
+                $xm_userid = iconv('utf-8','gb2312',$xm_userid);
 
 
-            $str .=  $xm_userid."\t".$xm_id ."\t".$xm_myd ."\t".$xm_fyfx."\t".$xm_cjsj."\t".$xm_tjsj."\t".
-                $danjia."\t".$xm_zs."\t".$xm_dj."\t".$xm_je."\t\n";
+                $str .=  $xm_userid."\t".$xm_id ."\t".$xm_myd ."\t".$xm_fyfx."\t".$xm_cjsj."\t".$xm_tjsj."\t".
+                    $danjia."\t".$xm_zs."\t".$xm_dj."\t".$xm_je."\t\n";
+            }
+            $filename = $xm_yuefen.'.xls';
+            $this->exportExcel($filename,$str);
         }
-        $filename = $xm_yuefen.'.xls';
-        $this->exportExcel($filename,$str);
 
     }
 
@@ -200,6 +205,8 @@ class BillController extends Controller {
      * 到达账单删除页面
      */
     public function Bill_todel(){
+        $time = date("Ym",time());
+        $this->assign("time",$time);
         $this->display("Bill_del");
     }
     /*
@@ -214,8 +221,32 @@ class BillController extends Controller {
            echo "删除错误";
         }else{
             //这个需要对跳转优化
-            $this->Bill_list();
+            $this->assign('success','删除成功');
+            $this->assign("time",$xm_yuefen);
+            $this->display("Bill_del");
         }
+    }
+    /*
+     * 下载模版
+     */
+
+    public function down_moban(){
+        $file = "moban.xls";
+        if(is_file($file)) {
+            header("Content-Type: application/force-download");
+            header("Content-Disposition: attachment; filename=".basename($file));
+            readfile($file);
+            exit;
+        }else{
+            echo "文件不存在！";
+            exit;
+        }
+    }
+    /*
+     * 到达
+     */
+    public function Bill_tochange(){
+
     }
 
 }
