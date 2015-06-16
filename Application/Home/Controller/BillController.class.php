@@ -142,7 +142,74 @@ class BillController extends Controller {
         $this->assign("list",$list);
         $this->display("import_data_list");
     }
+     /*
+     * 到达  对账单上传后信息提交
+     */
 
+    public function import_submit(){
+
+        $duizhangdan = M("duizhangdan");
+        
+        $d[] = $_POST['xm_userid'];
+        $d[] = $_POST['xm_id'];
+        $d[] = $_POST['xm_fyfx'];
+        $d[] = $_POST['xm_cjsj'];
+        $d[] = $_POST['xm_tjsj'];
+        $d[] = $_POST['xm_zs'];
+        $d[] = $_POST['xm_dj'];
+        $d[] = $_POST['xm_je'];
+        $d[] = $_POST['xm_myd'];
+        $d[] = $_POST['xm_cjfw'];
+
+        $length_1 = count($d);
+        $length_2 = (count($d,1)-$length_1)/$length_1;
+         // echo $length_1;echo '<br />';
+         // echo $length_2;
+         // echo '<br />';
+        $data = array();
+        for($i=0;$i<$length_2;$i++){
+            for($j=0;$j<$length_1;$j++){
+                // echo $i.'^_^'.$j;
+                switch ($j) {
+                    case 0:
+                        $data['xm_userid'] = $d[$j][$i];
+                        continue;
+                    case 1:
+                        $data['xm_id'] = $d[$j][$i];
+                        continue;
+                    case 2:
+                        $data['xm_fyfx'] = $d[$j][$i];
+                        continue;
+                    case 3:
+                        $data['xm_cjsj'] = $d[$j][$i];
+                        continue;
+                    case 4:
+                        $data['xm_tjsj'] = $d[$j][$i];
+                        continue;
+                    case 5:
+                        $data['xm_zs'] = $d[$j][$i];
+                        continue;
+                    case 6:
+                        $data['xm_dj'] = $d[$j][$i];
+                        continue;
+                    case 7:
+                        $data['xm_je'] = $d[$j][$i];
+                        continue;
+                    case 8:
+                        $data['xm_myd'] = $d[$j][$i];
+                        continue;
+                    case 9:
+                        $data['xm_cjfw'] = $d[$j][$i];
+                        continue;
+                }
+
+            }
+            $duizhangdan->add($data);
+         }
+         
+        $this->Bill_list();
+        
+     }
     /*
      * 到达账单下载页面
      */

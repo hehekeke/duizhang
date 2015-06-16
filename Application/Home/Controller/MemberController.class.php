@@ -11,17 +11,17 @@ use Think\Controller;
 class MemberController extends Controller{
 
   public function yiyuan_list(){
-
   	$this->queryMember();
-
     $this->display('yiyuan_list');
   }
+
   //账号状态禁止
   public function ban(){
+
     $member =  new \Home\Model\MemberModel();
     $_id = $_GET['id'];
     $data = array("u_kaitong"=>0);
-
+    
     if($member->where("u_id=$_id")->setField($data)){
       $this->yiyuan_list();
     }
