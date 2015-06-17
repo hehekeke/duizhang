@@ -30,6 +30,7 @@
     <input type="text" name="xm_yuefen" class="abc input-default" value="{$xm_yuefen}">&nbsp;&nbsp;
     <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
 </form>
+<form action="/index.php/Home/Bill/import_submit" method="POST">
 <table class="table table-bordered table-hover definewidth m10">
     <thead>
     <tr>
@@ -45,7 +46,7 @@
         <th>承接范围</th>
     </tr>
     </thead>
-
+    
     <volist name="list" id="vo">
         <tr>
             <td style="max-width: 35px;"><input  style="max-width: 30px;" type="text" name="xm_userid" value="{$vo['xm_userid']}"/></td>
@@ -58,10 +59,12 @@
             <td style="max-width: 35px;"><input  style="max-width: 60px;" type="text" name="xm_je" value="{$vo['xm_je']}"/></td>
             <td colspan="2" ><input  style="max-width: 100px;" type="text" name="xm_myd" value="{$vo['xm_myd']}"/></td>
             <td><input  style="max-width: 90px;" type="text" name="xm_cjfw" value="{$vo['xm_cjfw']}"/></td>
+
         </tr>
     </volist>
-
+    <tr><td style="max-width:100%;"><input type="submit" value="提交" name="submit"></td></tr>
 </table>
+</form>
 <div class="page">{$page}</div>
 </body>
 </html>
