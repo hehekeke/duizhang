@@ -49,7 +49,7 @@
         <th>文件名</th>
         <th>承接范围</th>
         <th>确定状态</th>
-        <th>操作</th>
+
     </tr>
     </thead>
     <if condition="count($list) eq 0">
@@ -81,10 +81,7 @@
                         <span style="color: red">未处理</span>
                     </if>
                 </td>
-                <td>
-                    <a href="http://localhost/index.php/home/Bill/Bill_toupdate/id/{$vo['id']}">修改</a>
-                    <a class="del" id="{$vo['id']}">删除</a>
-                </td>
+
             </tr>
         </volist>
     </if>
