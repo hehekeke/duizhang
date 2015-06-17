@@ -18,7 +18,7 @@
        <!--<img src="/chinapost/Public/assets/img/top.png">-->
       </div>
 
-    <div class="dl-log">欢迎您，<span class="dl-log-user">{$username}</span><a href="/index.php/Home/Login/logout" title="退出系统" class="dl-log-quit">[退出]</a>
+    <div class="dl-log">欢迎您，<span class="dl-log-user">{$name}</span><a href="/index.php/Home/Login/logout" title="退出系统" class="dl-log-quit">[退出]</a>
     </div>
   </div>
    <div class="content">
@@ -39,34 +39,28 @@
           {text:'系统管理',items:[
 
               {id:'10',text:'译员管理',href:'/index.php/Home/Member/yiyuan_list'},
-              {id:'2',text:'管理员列表',href:'/index.php/Home/Admin/admin_list'},
-              {id:'4',text:'译员反馈',href:''},
-              {id:'9',text:'代译员确认',href:''}
+              {id:'2',text:'管理员列表',href:'/index.php/Home/Admin/admin_list'}
           ]},
           {text:'账单管理',items:[
 
               {id:'1',text:'账单导入',href:'/index.php/Home/Bill/to_import'},
               {id:'3',text:'账单列表',href:'/index.php/home/Bill/Bill_list'},
-              {id:'10',text:'译员反馈',href:'/index.php/home/Bill/Bill_list'},
+              {id:'4',text:'译员反馈',href:'/index.php/Home/Bill/Bill_tickling'},
               {id:'11',text:'账单下载',href:'/index.php/home/Bill/Bill_toDown'},
               {id:'',text:' 标注已付款',href:'/index.php/home/Bill/Bill_tochange'},
 
               {id:'6',text:'历史账单删除',href:'/index.php/home/Bill/Bill_todel'}
           ]},
-          {text:'译员中心',items:[
-              {id:'10',text:'资料维护',href:'/index.php/Home/News/news'},
-              {id:'11',text:'本期账单',href:'Role/index.html'}
-             
+          {text:'系统通知',items:[
+              {id:'',text:'系统通知',href:'/index.php/Home/News/news'},
+              {id:'',text:'更新通知',href:'/index.php/Home/News/updateNews'}
           ]},
           {text:'数据库备份',items:[
               {id:'',text:'数据库备份',href:'/index.php/Home/Backup/backup'}
 
           ]
-          },
-          {text:'系统参数',items:[
-              {id:'',text:'系统通知',href:'/index.php/Home/News/updateNews'}
-          ]
           }
+
           ]},
           {id:'7',homePage : '9',menu:[{text:'业务管理',items:[{id:'9',text:'查询业务',href:'Node/index.html'}]}]}];
       new PageUtil.MainPage({

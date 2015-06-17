@@ -1,28 +1,50 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="gb2312">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <title>议员对账系统 HP TRS1.0</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/src/js/jquery.js"></script>
 <style type="text/css">
 body{margin:0; padding:0}
 ul,li{ list-style:none}
 .warp{background:url(/src/bg.jpg) center center no-repeat; width:845px; height:490px; text-align:center; margin:80px auto 0 auto;}
 .input{border:0; width:210px; height:25px; line-height:25px; font-size:12px; padding-left:5px}
 </style>
+    <script>
+       $(function(){
+            $("#tijiao").click(function(){
+                var username = $("#username").val();
+                if(username == "" ){
+                    alert("用户名不能为空");
+                    return false;
+                }
+                var password = $("#password").val();
+                if(password == "" ){
+                    alert("密码不能为空");
+                    return false;
+                }
+                $.post("/index.php/Home/Login/login",{username:username,password:password},function(data){
+                    if(data == 0){
+                        alert("用户名或密码错误");
+                    }else if(data == 2){
+                        alert("一般用户禁止登录");
+                    }else if(data == 1){
+                      window.location.href='/index.php/Home/Index/index';
+                    }
+
+                });
+
+            });
+       });
+    </script>
 </head>
 <body>
 	<div class="warp">
-		<form action="/index.php/Home/Index/index" method="post" name="adminlogin" id="adminlogin">
-			<!-- <input type="hidden" name="do_submit" value="1" />
-			<input type="hidden" name="action" value="dl" /> -->
-		
+		<form action="" method="post" name="adminlogin" id="adminlogin">
 		<ul>
 			<li style="padding-left:475px; text-align:left; padding-top:155px"><input name="u_name" type="text" class="input" id="username" ></li>
 			<li style="padding-left:475px; text-align:left; padding-top:45px"><input name="u_pass" type="password" class="input" id="password" ></li>
-			<!-- <li style="padding-left:475px; text-align:left; padding-top:45px"></li> -->
-			<li style="padding-left:610px; text-align:left; padding-top:132px"><input  type="submit" value="" title="登录" style="border:0; background:none; width:105px; height:43px; cursor:pointer" ></li>
+			<li style="padding-left:610px; text-align:left; padding-top:132px"><input  type="button" id="tijiao" value="" title="登录" style="border:0; background:none; width:105px; height:43px; cursor:pointer" ></li>
 		</ul>
 		</form>
 	</div>

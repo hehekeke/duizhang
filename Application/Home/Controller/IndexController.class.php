@@ -4,12 +4,21 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-    	if ($this->checklogin()) {
-    	
-       		$this->display("Index");
-    	}else{
-    		$this->redirect('/Home/Login/login');
-    	}
+        $user_session = session('user');
+        if(empty($user_session)){
+            $this->redirect('Login/toLogin');
+        }else{
+            $quanxian = session('quanxian');
+            $this->assign("name",$user_session['u_name']);
+            if($quanxian == '1'){
+                $this->display("index");
+            }else if($quanxian == '2'){
+                $this->display("index_pt");
+            }
+
+        }
+
+
     }
 
     //验证登录
@@ -30,9 +39,8 @@ class IndexController extends Controller {
 	        }
 	        if($ver){
 	            S('u_name',$u_name);
-	            // S('u_pass',$u_pass);
+
 	            $this->assign('username',S('u_name'));
-	            // $this->assign('password',S('u_pass'));
 	            return true;
 	            // $this->success("登录成功",U('Index/index'));
 	        }else{

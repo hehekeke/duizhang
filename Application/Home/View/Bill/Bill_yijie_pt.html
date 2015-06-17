@@ -52,40 +52,42 @@
         <th>操作</th>
     </tr>
     </thead>
-
-    <volist name="list" id="vo">
+    <if condition="count($list) eq 0">
         <tr>
-            <td>{$vo['xm_yuefen']}</td>
-
-            <td style="max-width: 70px;">{$vo['xm_id']}</td>
-            <td>{$vo['xm_userid']}</td>
-            <td>{$vo['xm_fyfx']|msubstr=0,10}</td>
-            <td>{$vo['xm_cjsj']|msubstr=0,10}</td>
-            <td>{$vo['xm_tjsj']|msubstr=0,10}</td>
-            <td>{$vo['xm_zs']}</td>
-            <td>{$vo['xm_dj']}</td>
-            <td>{$vo['xm_je']}</td>
-            <td style="max-width: 100px;">{$vo['xm_myd']|msubstr=0,14}</td>
-            <td style="max-width: 100px;" >{$vo['xm_cjfw']|msubstr_san=0,6}</td>
-            <td>
-                <if condition="$vo['xm_fkzt'] eq 3">
-                    <span style="color: green">已付款</span>
-
-                    <elseif condition="$vo['xm_fkzt'] eq 2" />
-                    <span style="color: red">已经反馈</span>
-                    <elseif condition="$vo['xm_fkzt'] eq 1" />
-                    <span style="color: #0000ff">已确认</span>
-                    <elseif condition="$vo['xm_fkzt'] eq 0" />
-                    <span style="color: red">未处理</span>
-                </if>
-            </td>
-            <td>
-                <a href="http://localhost/index.php/home/Bill/Bill_toupdate/id/{$vo['id']}">修改</a>
-                <a class="del" id="{$vo['id']}">删除</a>
-            </td>
+            <td colspan="12">无相关数据</td>
         </tr>
-    </volist>
+        <else/>
+        <volist name="list" id="vo">
+            <tr>
+                <td>{$vo['xm_yuefen']}</td>
 
+                <td style="max-width: 70px;">{$vo['xm_id']}</td>
+                <td>{$vo['xm_userid']}</td>
+                <td>{$vo['xm_fyfx']|msubstr=0,10}</td>
+                <td>{$vo['xm_cjsj']|msubstr=0,10}</td>
+                <td>{$vo['xm_tjsj']|msubstr=0,10}</td>
+                <td>{$vo['xm_zs']}</td>
+                <td>{$vo['xm_dj']}</td>
+                <td>{$vo['xm_je']}</td>
+                <td style="max-width: 100px;">{$vo['xm_myd']|msubstr=0,14}</td>
+                <td style="max-width: 100px;" >{$vo['xm_cjfw']|msubstr_san=0,6}</td>
+                <td>
+                    <if condition="$vo['xm_fkzt'] eq 3">
+                        <span style="color: green">已付款</span>
+
+                        <elseif  condition="$vo['xm_fkzt'] eq 2"/>
+                        <span style="color: red">已反馈</span>
+                        <else/>
+                        <span style="color: red">未处理</span>
+                    </if>
+                </td>
+                <td>
+                    <a href="http://localhost/index.php/home/Bill/Bill_toupdate/id/{$vo['id']}">修改</a>
+                    <a class="del" id="{$vo['id']}">删除</a>
+                </td>
+            </tr>
+        </volist>
+    </if>
 </table>
 <div class="page">{$page}</div>
 </body>
@@ -118,22 +120,4 @@
 
 
     });
-
-    function del(id)
-    {
-
-
-
-        {
-
-            var url = "index.html";
-
-            window.location.href=url;
-
-        }
-
-
-
-
-    }
 </script>

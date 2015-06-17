@@ -89,23 +89,6 @@
             padding-bottom: 10px;
         }
     </style>
-    <script>
-        $(function(){
-            $("#confirm").click(function(){
-                if(confirm('是否继续？确定后无法恢复')){
-                    $.post("/index.php/Home/Bill/Bill_change",{},function(data){
-                        if(data == 1){
-                            alert("批量处理操作完成");
-                            window.location.reload();
-                        }
-                    });
-                }else{
-                   return false;
-                }
-
-            });
-        });
-    </script>
 
 </head>
 <body>
@@ -117,10 +100,66 @@
             </div>
             <div class="content">
                 <span>相关提示：</span><br/>
-                批量将议员已确认对账单设置为已付款状态。<br/>
-                说明：请在导出对账单之后进行确认操作，本操作不可逆。本操作将不影响未确认的议员对账单，仅对已经确认的对账单进行批量处理。<br/>
-                <button  id="confirm" class="btn btn-primary">批量将'已确定'处理成'已付款'</button>&nbsp;&nbsp;
+                译员反馈列表。<br/>
             </div>
+
+
+            <table class="table table-bordered table-hover definewidth m10">
+                <thead>
+                <tr>
+                    <th>导入日期</th>
+                    <th>项目编号</th>
+                    <th>译员</th>
+                    <th>稿件类型</th>
+                    <th>接稿日期</th>
+                    <th>交稿日期</th>
+                    <th>字数</th>
+                    <th>单价</th>
+                    <th>金额</th>
+                    <th>文件名</th>
+                    <th>承接范围</th>
+                    <th>操作</th>
+                </tr>
+                <if condition="count($list) eq 0">
+                    <tr>
+
+                        <td colspan="12"> 没有找到对应的数据</td>
+                     </tr>
+                    <else />
+                    <volist name="list" id="vo">
+                        <tr>
+                            <td>{$vo['xm_yuefen']}</td>
+
+                            <td style="max-width: 70px;">{$vo['xm_id']}</td>
+                            <td>{$vo['xm_userid']}</td>
+                            <td>{$vo['xm_fyfx']|msubstr=0,10}</td>
+                            <td>{$vo['xm_cjsj']|msubstr=0,10}</td>
+                            <td>{$vo['xm_tjsj']|msubstr=0,10}</td>
+                            <td>{$vo['xm_zs']}</td>
+                            <td>{$vo['xm_dj']}</td>
+                            <td>{$vo['xm_je']}</td>
+                            <td style="max-width: 100px;">{$vo['xm_myd']|msubstr=0,14}</td>
+                            <td style="max-width: 100px;" >{$vo['xm_cjfw']|msubstr_san=0,6}</td>
+                            <td>
+                                <if condition="$vo['xm_fkzt'] eq 3 ">
+                                    确认反馈
+                                    <elseif condition="$vo['xm_fkzt'] eq 2" />
+                                    <a href="http://localhost/index.php/home/Bill/Bill_tickling_toupdate/id/{$vo['id']}">查看</a>
+                                </if>
+
+
+                            </td>
+                        </tr>
+                    </volist>
+
+
+
+
+                </if>
+
+                </thead>
+            </table>
+            <div class="page">{$page}</div>
         </div>
     </form>
 </div>

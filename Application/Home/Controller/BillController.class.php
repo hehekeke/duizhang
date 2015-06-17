@@ -251,8 +251,172 @@ class BillController extends Controller {
 
     public function Bill_change(){
         $duizhangdan = M("duizhangdan");
-        $res = $duizhangdan->where('xm_fkzt=3')->save(array('xm_fkzt'=>'4'));
+        $duizhangdan->where('xm_fkzt=1')->save(array('xm_fkzt'=>'3'));
+        echo 1;
 
+    }
+    /*
+     * Bill_tickling  反馈页面
+     */
+    public function Bill_tickling(){
+
+        $duizhangdan = M("duizhangdan");
+        $User = M("user_db");
+        $res_count= $duizhangdan->count();
+        $Page = new  \Think\Page($res_count,8);
+        $show = $Page->show();// 分页显示输出
+        $res = $duizhangdan->limit($Page->firstRow.','.$Page->listRows)->order("id desc")->select();
+
+        for($i=0;$i<count($res);$i++){
+            $user_data =$User->where("u_id=".$res[$i]['xm_userid'])->field("u_mingzi")->find();
+            unset($res[$i]['xm_userid']);
+            $res[$i]['xm_userid'] = $user_data["u_mingzi"];
+        }
+        $this->assign('page',$show);
+        $this->assign("list",$res);
+
+        $this->display("Bill_tickling");
+
+    }
+    /*
+     * Bill_tickling_toupdate  反馈页面
+     */
+    public function  Bill_tickling_toupdate(){
+        $bill_id = $_GET['id'];
+        $duizhangdan = M("duizhangdan");
+        $res = $duizhangdan->where('id = '.$bill_id)->order("id desc")->select();
+        $this->assign("BillInfo",$res);
+        $this->display("Bill_tickling_update");
+    }
+    public function Bill_tickling_update(){
+        $duizhangdan = M("duizhangdan");
+        $duizhangdan->create();
+        $duizhangdan->save();
+        $this->Bill_tickling();
+    }
+
+    public function Bill_benqi_list(){
+        $user = session('user');
+        $duizhangdan = M("duizhangdan");
+        $User = M("user_db");
+        $res_count= $duizhangdan->where("xm_userid=".$user['u_id'])->count();
+        $Page = new  \Think\Page($res_count,8);
+        $show = $Page->show();// 分页显示输出
+        $res = $duizhangdan->where("xm_userid=".$user['u_id'])->limit($Page->firstRow.','.$Page->listRows)->order("id desc")->select();
+
+        for($i=0;$i<count($res);$i++){
+            $user_data =$User->where("u_id=".$res[$i]['xm_userid'])->field("u_mingzi")->find();
+            unset($res[$i]['xm_userid']);
+            $res[$i]['xm_userid'] = $user_data["u_mingzi"];
+        }
+        $this->assign('page',$show);
+        $this->assign("list",$res);
+
+        $this->display("Bill_benqi_list");
+    }
+
+    public function Bill_confirm(){
+        $id = $_POST['id'];
+        $duizhangdan = M("duizhangdan");
+        $data['xm_fkzt'] = '1';
+        $duizhangdan->where('id='.$id)->data($data)->save();
+        echo 1;
+    }
+    public function Bill_fankui(){
+        $id = $_POST['id'];
+        $name = $_POST['name'];
+        $data['xm_fkzt'] = '2';
+        $data['xm_fkyy'] = $name;
+        $duizhangdan = M("duizhangdan");
+        $duizhangdan->where('id='.$id)->data($data)->save();
+        echo 1;
+    }
+
+    public function Bill_all_list(){
+        $user = session('user');
+        $duizhangdan = M("duizhangdan");
+        $User = M("user_db");
+        $conditon['xm_userid'] = $user['u_id'];
+        $res_count= $duizhangdan->where($conditon)->count();
+        $Page = new  \Think\Page($res_count,8);
+        $show = $Page->show();// 分页显示输出
+        $res = $duizhangdan->where($conditon)->limit($Page->firstRow.','.$Page->listRows)->order("id desc")->select();
+        for($i=0;$i<count($res);$i++){
+            $user_data =$User->where("u_id=".$res[$i]['xm_userid'])->field("u_mingzi")->find();
+            unset($res[$i]['xm_userid']);
+            $res[$i]['xm_userid'] = $user_data["u_mingzi"];
+        }
+        $this->assign('page',$show);
+        $this->assign("list",$res);
+
+        $this->display("Bill_all_list");
+
+}
+
+
+    public function Bill_yijie_pt(){
+        $user = session('user');
+        $duizhangdan = M("duizhangdan");
+        $User = M("user_db");
+        $conditon['xm_userid'] = $user['u_id'];
+        $conditon['xm_fkzt'] = "3";
+        $res_count= $duizhangdan->where($conditon)->count();
+        $Page = new  \Think\Page($res_count,8);
+        $show = $Page->show();// 分页显示输出
+        $res = $duizhangdan->where($conditon)->limit($Page->firstRow.','.$Page->listRows)->order("id desc")->select();
+
+        for($i=0;$i<count($res);$i++){
+            $user_data =$User->where("u_id=".$res[$i]['xm_userid'])->field("u_mingzi")->find();
+            unset($res[$i]['xm_userid']);
+            $res[$i]['xm_userid'] = $user_data["u_mingzi"];
+        }
+        $this->assign('page',$show);
+        $this->assign("list",$res);
+
+        $this->display("Bill_yijie_pt");
+    }
+
+    public function Bill_fk_list(){
+        $user = session('user');
+        $duizhangdan = M("duizhangdan");
+        $User = M("user_db");
+        $conditon['xm_userid'] = $user['u_id'];
+        $conditon['xm_fkzt'] = "2";
+        $res_count= $duizhangdan->where($conditon)->count();
+        $Page = new  \Think\Page($res_count,8);
+        $show = $Page->show();// 分页显示输出
+        $res = $duizhangdan->where($conditon)->limit($Page->firstRow.','.$Page->listRows)->order("id desc")->select();
+
+        for($i=0;$i<count($res);$i++){
+            $user_data =$User->where("u_id=".$res[$i]['xm_userid'])->field("u_mingzi")->find();
+            unset($res[$i]['xm_userid']);
+            $res[$i]['xm_userid'] = $user_data["u_mingzi"];
+        }
+        $this->assign('page',$show);
+        $this->assign("list",$res);
+
+        $this->display("Bill_yijie_pt");
+    }
+    public function Bill_confirm_list(){
+        $user = session('user');
+        $duizhangdan = M("duizhangdan");
+        $User = M("user_db");
+        $conditon['xm_userid'] = $user['u_id'];
+        $conditon['xm_fkzt'] = "1";
+        $res_count= $duizhangdan->where($conditon)->count();
+        $Page = new  \Think\Page($res_count,8);
+        $show = $Page->show();// 分页显示输出
+        $res = $duizhangdan->where($conditon)->limit($Page->firstRow.','.$Page->listRows)->order("id desc")->select();
+
+        for($i=0;$i<count($res);$i++){
+            $user_data =$User->where("u_id=".$res[$i]['xm_userid'])->field("u_mingzi")->find();
+            unset($res[$i]['xm_userid']);
+            $res[$i]['xm_userid'] = $user_data["u_mingzi"];
+        }
+        $this->assign('page',$show);
+        $this->assign("list",$res);
+
+        $this->display("Bill_confirm_pt");
     }
 
 }
