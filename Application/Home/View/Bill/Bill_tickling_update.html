@@ -29,7 +29,7 @@
 <form action="/index.php/Home/Bill/Bill_tickling_update" method="post" class="definewidth m20">
     <volist name="BillInfo" id="user">
         <input type="hidden" name="id" value="{$user.id}" />
-        <input type="hidden" name="xm_fkzt" value="3" />
+        <input type="hidden" name="xm_fkzt" value="0" />
         <table class="table table-bordered table-hover definewidth m10">
             <tr>
                 <td  class="tableleft">项目编号</td>
@@ -95,7 +95,7 @@
 <script>
     $(function () {
         $('#backid').click(function(){
-            window.location.href="{:U('Bill/Bill_list')}";
+            window.location.href="{:U('Bill/Bill_tickling')}";
         });
     });
 </script>

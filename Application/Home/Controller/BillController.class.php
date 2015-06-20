@@ -329,10 +329,10 @@ class BillController extends Controller {
 
         $duizhangdan = M("duizhangdan");
         $User = M("user_db");
-        $res_count= $duizhangdan->count();
+        $res_count= $duizhangdan->where("xm_fkzt=2")->count();
         $Page = new  \Think\Page($res_count,8);
         $show = $Page->show();// 分页显示输出
-        $res = $duizhangdan->limit($Page->firstRow.','.$Page->listRows)->order("id desc")->select();
+        $res = $duizhangdan->where("xm_fkzt=2")->limit($Page->firstRow.','.$Page->listRows)->order("id desc")->select();
 
         for($i=0;$i<count($res);$i++){
             $user_data =$User->where("u_id=".$res[$i]['xm_userid'])->field("u_mingzi")->find();
