@@ -51,8 +51,6 @@ class AdminController extends Controller{
       $res = $member->limit($Page->firstRow.','.$Page->listRows)->where('u_quanxian=1')->select();
       $this->assign('page',$show);
       $this->assign("list",$res);
-      // var_dump($data);exit();
-      // $this->assign('member',$data);
   }
 
     public function addMember(){
@@ -63,18 +61,20 @@ class AdminController extends Controller{
   }
   //新增用户
   public function add(){
-    $member =  new \Home\Model\MemberModel();
-   // 根据表单提交的POST数据创建数据对象
-    if(!$member->create()){   
-         // 如果主键是自动增长型 成功后返回值就是最新插入的值       
-       exit($member->getError());
-        
-    }else{
-      //上传头像
-       $this->upload($member);
-       $member->add();
-       $this->admin_list();
-    }
+      $member =  new \Home\Model\MemberModel();
+
+      if(!$member->create()){
+          exit($member->getError());
+      }else{
+          if( $member->u_pic == null){
+              $member->add();
+              $this->Admin_list();
+          }else{
+              $this->upload($member);
+              $member->add();
+              $this->Admin_list();
+          }
+      }
   }
 
   //上传图片的方法
@@ -88,14 +88,14 @@ class AdminController extends Controller{
     // 上传文件     
     $info = $upload->upload();    
   
-    if(!$info) {// 上传错误提示错误信息        
-      $this->error($upload->getError());  
-      $this->addMember();  
+    if(!$info) {// 上传错误提示错误信息
+//      $this->error($upload->getError());
+      $this->addMember();
     }else{
        foreach($info as $file){
          $member->u_pic = $file['savepath'].$file['savename'];
         }
-      
+
     }
   }
 //编辑用户信息
@@ -131,5 +131,7 @@ class AdminController extends Controller{
       }
 
     }
+
+
 
 }

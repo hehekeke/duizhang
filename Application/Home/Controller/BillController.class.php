@@ -149,7 +149,6 @@ class BillController extends Controller {
     public function import_submit(){
 
         $duizhangdan = M("duizhangdan");
-        
         $d[] = $_POST['xm_userid'];
         $d[] = $_POST['xm_id'];
         $d[] = $_POST['xm_fyfx'];
@@ -160,54 +159,55 @@ class BillController extends Controller {
         $d[] = $_POST['xm_je'];
         $d[] = $_POST['xm_myd'];
         $d[] = $_POST['xm_cjfw'];
-
+//
         $length_1 = count($d);
-        $length_2 = (count($d,1)-$length_1)/$length_1;
-         // echo $length_1;echo '<br />';
-         // echo $length_2;
-         // echo '<br />';
-        $data = array();
-        for($i=0;$i<$length_2;$i++){
-            for($j=0;$j<$length_1;$j++){
-                // echo $i.'^_^'.$j;
-                switch ($j) {
-                    case 0:
-                        $data['xm_userid'] = $d[$j][$i];
-                        continue;
-                    case 1:
-                        $data['xm_id'] = $d[$j][$i];
-                        continue;
-                    case 2:
-                        $data['xm_fyfx'] = $d[$j][$i];
-                        continue;
-                    case 3:
-                        $data['xm_cjsj'] = $d[$j][$i];
-                        continue;
-                    case 4:
-                        $data['xm_tjsj'] = $d[$j][$i];
-                        continue;
-                    case 5:
-                        $data['xm_zs'] = $d[$j][$i];
-                        continue;
-                    case 6:
-                        $data['xm_dj'] = $d[$j][$i];
-                        continue;
-                    case 7:
-                        $data['xm_je'] = $d[$j][$i];
-                        continue;
-                    case 8:
-                        $data['xm_myd'] = $d[$j][$i];
-                        continue;
-                    case 9:
-                        $data['xm_cjfw'] = $d[$j][$i];
-                        continue;
-                }
-
-            }
-            $duizhangdan->add($data);
-         }
-         
-        $this->Bill_list();
+        echo $length_1;
+//        $length_2 = (count($d,1)-$length_1)/$length_1;
+//         // echo $length_1;echo '<br />';
+//         // echo $length_2;
+//         // echo '<br />';
+//        $data = array();
+//        for($i=0;$i<$length_2;$i++){
+//            for($j=0;$j<$length_1;$j++){
+//                // echo $i.'^_^'.$j;
+//                switch ($j) {
+//                    case 0:
+//                        $data['xm_userid'] = $d[$j][$i];
+//                        continue;
+//                    case 1:
+//                        $data['xm_id'] = $d[$j][$i];
+//                        continue;
+//                    case 2:
+//                        $data['xm_fyfx'] = $d[$j][$i];
+//                        continue;
+//                    case 3:
+//                        $data['xm_cjsj'] = $d[$j][$i];
+//                        continue;
+//                    case 4:
+//                        $data['xm_tjsj'] = $d[$j][$i];
+//                        continue;
+//                    case 5:
+//                        $data['xm_zs'] = $d[$j][$i];
+//                        continue;
+//                    case 6:
+//                        $data['xm_dj'] = $d[$j][$i];
+//                        continue;
+//                    case 7:
+//                        $data['xm_je'] = $d[$j][$i];
+//                        continue;
+//                    case 8:
+//                        $data['xm_myd'] = $d[$j][$i];
+//                        continue;
+//                    case 9:
+//                        $data['xm_cjfw'] = $d[$j][$i];
+//                        continue;
+//                }
+//
+//            }
+//            $duizhangdan->add($data);
+//         }
+//
+//        $this->Bill_list();
         
      }
     /*
@@ -484,6 +484,57 @@ class BillController extends Controller {
         $this->assign("list",$res);
 
         $this->display("Bill_confirm_pt");
+    }
+
+    public function query_Bill_pt(){
+        $user = session('user');
+        $duizhangdan = M("duizhangdan");
+        $conditon['xm_userid'] = $user['u_id'];
+
+
+        $xm_id = $_GET['xm_id'];//这个项目编号
+        $xm_cjsj =  $_GET['xm_cjsj'];
+        $xm_tjsj =  $_GET['xm_tjsj'];
+        if(!empty($xm_id)){
+            $conditon['xm_id'] =$xm_id;
+        }
+        if(!empty($xm_cjsj)){
+            $time = $xm_cjsj." 00:00:00".",".$xm_cjsj." 23:59:59";
+
+            $conditon['xm_cjsj'] = array('between',$time);;
+        }
+        if(!empty($xm_tjsj)){
+            $time = $xm_tjsj." 00:00:00".",".$xm_tjsj." 23:59:59";
+
+            $conditon['xm_tjsj'] = array('between',$time);;
+        }
+
+
+
+
+        $res_count= $duizhangdan->where($conditon)->count();
+        $Page = new  \Think\Page($res_count,10);
+        $show = $Page->show();// 分页显示输出
+
+        $map['xm_id'] = $_GET['xm_id'];
+        foreach($map as $key=>$val) {
+            $Page->parameter .= "$key=".urlencode($val)."&";
+        }
+        $res = $duizhangdan->where($conditon)->limit($Page->firstRow.','.$Page->listRows)->order("id desc")->select();
+        $User = M("user_db");
+        for($i=0;$i<count($res);$i++){
+            $user_data =$User->where("u_id=".$res[$i]['xm_userid'])->field("u_mingzi")->find();
+            unset($res[$i]['xm_userid']);
+            $res[$i]['xm_userid'] = $user_data["u_mingzi"];
+        }
+
+        $this->assign('xm_id',$xm_id);
+        $this->assign('xm_cjsj',$xm_cjsj);
+        $this->assign('xm_tjsj',$xm_tjsj);
+
+        $this->assign('page',$show);
+        $this->assign("list",$res);
+        $this->display("Bill_all_list");
     }
 
 }

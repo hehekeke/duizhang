@@ -25,7 +25,7 @@
     <div class="dl-main-nav">
         <div class="dl-inform"><div class="dl-inform-title"><s class="dl-inform-icon dl-up"></s></div></div>
         <ul id="J_Nav"  class="nav-list ks-clear">
-            <li class="nav-item dl-selected"><div class="nav-item-inner nav-home">系统管理</div></li>		<li class="nav-item dl-selected"><div class="nav-item-inner nav-order">业务管理</div></li>
+            <li class="nav-item dl-selected"><div class="nav-item-inner nav-home">系统管理</div></li>
 
         </ul>
     </div>
@@ -35,7 +35,9 @@
 </div>
 <script>
     BUI.use('common/main',function(){
-        var config = [{id:'1',menu:[
+        var config = [{id:'1',
+            homePage:'2',
+            menu:[
             {text:'账单管理',items:[
                 {id:'',text:'本期账单',href:'/index.php/home/Bill/Bill_benqi_list'},
                 {id:'',text:'所有账单',href:'/index.php/home/Bill/Bill_all_list'},
@@ -53,8 +55,7 @@
             ]},
 
 
-        ]},
-            {id:'7',homePage : '9',menu:[{text:'业务管理',items:[{id:'9',text:'查询业务',href:'Node/index.html'}]}]}];
+        ]}];
         new PageUtil.MainPage({
             modulesConfig : config
         });

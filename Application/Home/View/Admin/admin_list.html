@@ -73,7 +73,7 @@
     <input type="text" name="u_name" id="username"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
 
     <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
-
+    <button type="button" name="add" class="btn btn-success" id="addnew">新增用户</button>&nbsp;&nbsp;
 </form>
 <table class="table table-bordered table-hover definewidth m10">
     <thead>
@@ -138,9 +138,8 @@
 
         $('#addnew').click(function(){
 
-				window.location.href="add.html";
-		 });
-
+            window.location.href="/index.php/Home/Admin/addMember";
+        });
 
     });
 

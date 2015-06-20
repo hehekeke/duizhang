@@ -25,7 +25,7 @@
     <div class="dl-main-nav">
       <div class="dl-inform"><div class="dl-inform-title"><s class="dl-inform-icon dl-up"></s></div></div>
       <ul id="J_Nav"  class="nav-list ks-clear">
-        		<li class="nav-item dl-selected"><div class="nav-item-inner nav-home">系统管理</div></li>		<li class="nav-item dl-selected"><div class="nav-item-inner nav-order">业务管理</div></li>       
+        		<li class="nav-item dl-selected"><div class="nav-item-inner nav-home">系统管理</div></li>
 
       </ul>
     </div>
@@ -35,8 +35,12 @@
    </div>
   <script>
     BUI.use('common/main',function(){
-      var config = [{id:'1',menu:[
-          {text:'系统管理',items:[
+      var config = [{id:'1',
+          homePage:'7',
+          menu:[
+          {text:'系统管理',
+
+              items:[
 
               {id:'10',text:'译员管理',href:'/index.php/Home/Member/yiyuan_list'},
               {id:'2',text:'管理员列表',href:'/index.php/Home/Admin/admin_list'}
@@ -52,7 +56,7 @@
               {id:'6',text:'历史账单删除',href:'/index.php/home/Bill/Bill_todel'}
           ]},
           {text:'系统通知',items:[
-              {id:'',text:'系统通知',href:'/index.php/Home/News/news'},
+              {id:'7',text:'系统通知',href:'/index.php/Home/News/news'},
               {id:'',text:'更新通知',href:'/index.php/Home/News/updateNews'}
           ]},
           {text:'数据库备份',items:[
@@ -61,8 +65,7 @@
           ]
           }
 
-          ]},
-          {id:'7',homePage : '9',menu:[{text:'业务管理',items:[{id:'9',text:'查询业务',href:'Node/index.html'}]}]}];
+          ]}];
       new PageUtil.MainPage({
         modulesConfig : config
       });

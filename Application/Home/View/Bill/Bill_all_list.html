@@ -93,81 +93,81 @@
 </head>
 <body>
 <div id="content">
-    <form class="form-inline definewidth m20" action="/index.php/Home/Bill/Bill_Down" method="post">
-        <div class="tz">
-            <div class="g">
-                <div class="g1">本期账单</div>
-            </div>
-            <div class="content">
-                <span>相关提示：</span><br/>
-                本期账单。<br/>
-            </div>
+    <form class="form-inline definewidth m20" action="/index.php/Home/Bill/query_Bill_pt" method="get">
+        项目编号：
+        <input type="text" name="xm_id" class="abc input-default" value="{$xm_id}">&nbsp;&nbsp;<br/>
+
+        接稿日期：
+        <input type="text" name="xm_cjsj" class="abc input-default" value="{$xm_cjsj}">&nbsp;&nbsp;<br/>
+        交稿日期：
+        <input type="text" name="xm_tjsj" class="abc input-default" value="{$xm_tjsj}">&nbsp;&nbsp;
 
 
-            <table class="table table-bordered table-hover definewidth m10">
-                <thead>
-                <tr>
-                    <th>导入日期</th>
-                    <th>项目编号</th>
-                    <th>译员</th>
-                    <th>稿件类型</th>
-                    <th>接稿日期</th>
-                    <th>交稿日期</th>
-                    <th>字数</th>
-                    <th>单价</th>
-                    <th>金额</th>
-                    <th>文件名</th>
-                    <th>承接范围</th>
-                    <th>操作</th>
-                </tr>
-                <if condition="count($list) eq 0">
-                    <tr>
-
-                        <td colspan="12"> 没有找到对应的数据</td>
-                    </tr>
-                    <else />
-                    <volist name="list" id="vo">
-                        <tr>
-                            <td>{$vo['xm_yuefen']}</td>
-                            <td style="max-width: 70px;">{$vo['xm_id']}</td>
-                            <td>{$vo['xm_userid']}</td>
-                            <td>{$vo['xm_fyfx']|msubstr=0,10}</td>
-                            <td>{$vo['xm_cjsj']|msubstr=0,10}</td>
-                            <td>{$vo['xm_tjsj']|msubstr=0,10}</td>
-                            <td>{$vo['xm_zs']}</td>
-                            <td>{$vo['xm_dj']}</td>
-                            <td>{$vo['xm_je']}</td>
-                            <td style="max-width: 100px;">{$vo['xm_myd']|msubstr=0,14}</td>
-                            <td style="max-width: 100px;" >{$vo['xm_cjfw']|msubstr_san=0,6}</td>
-                            <td>
-                                <if condition="$vo['xm_fkzt'] eq 0 ">
-                                    <a class="confirm" id="{$vo['id']}"  href="">确定</a>
-                                    <a class="del"  href="">反馈</a>
-
-                                    <elseif condition="$vo['xm_fkzt'] eq 1" />
-
-                                    <span style="color: #0000ff">已确认</span>
-
-                                    <elseif condition="$vo['xm_fkzt'] eq 2" />
-
-                                    <span style="color: #0000ff">已反馈</span>
-
-                                    <elseif condition="$vo['xm_fkzt'] eq 3" />
-                                    <span style="color:green">已付款</span>
-                                </if>
-
-
-                            </td>
-                        </tr>
-                    </volist>
-
-                </if>
-
-                </thead>
-            </table>
-            <div class="page">{$page}</div>
-        </div>
+        <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
     </form>
+    <table class="table table-bordered table-hover definewidth m10">
+        <thead>
+        <tr>
+            <th>导入日期</th>
+            <th>项目编号</th>
+            <th>译员</th>
+            <th>稿件类型</th>
+            <th>接稿日期</th>
+            <th>交稿日期</th>
+            <th>字数</th>
+            <th>单价</th>
+            <th>金额</th>
+            <th>文件名</th>
+            <th>承接范围</th>
+            <th>操作</th>
+        </tr>
+        <if condition="count($list) eq 0">
+            <tr>
+
+                <td colspan="12"> 没有找到对应的数据</td>
+            </tr>
+            <else />
+            <volist name="list" id="vo">
+                <tr>
+                    <td>{$vo['xm_yuefen']}</td>
+                    <td style="max-width: 70px;">{$vo['xm_id']}</td>
+                    <td>{$vo['xm_userid']}</td>
+                    <td>{$vo['xm_fyfx']|msubstr=0,10}</td>
+                    <td>{$vo['xm_cjsj']|msubstr=0,10}</td>
+                    <td>{$vo['xm_tjsj']|msubstr=0,10}</td>
+                    <td>{$vo['xm_zs']}</td>
+                    <td>{$vo['xm_dj']}</td>
+                    <td>{$vo['xm_je']}</td>
+                    <td style="max-width: 100px;">{$vo['xm_myd']|msubstr=0,14}</td>
+                    <td style="max-width: 100px;" >{$vo['xm_cjfw']|msubstr_san=0,6}</td>
+                    <td>
+                        <if condition="$vo['xm_fkzt'] eq 0 ">
+                            <a class="confirm" id="{$vo['id']}"  href="">确定</a>
+                            <a class="del"  href="">反馈</a>
+
+                            <elseif condition="$vo['xm_fkzt'] eq 1" />
+
+                            <span style="color: #0000ff">已确认</span>
+
+                            <elseif condition="$vo['xm_fkzt'] eq 2" />
+
+                            <span style="color: #0000ff">已反馈</span>
+
+                            <elseif condition="$vo['xm_fkzt'] eq 3" />
+                            <span style="color:green">已付款</span>
+                        </if>
+
+
+                    </td>
+                </tr>
+            </volist>
+
+        </if>
+
+        </thead>
+    </table>
+    <div class="page">{$page}</div>
+
 </div>
 <script>
     $(function(){

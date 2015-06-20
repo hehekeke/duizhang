@@ -16,8 +16,8 @@ class BackupController extends Controller{
 
     public function bakeData(){
         $host = "localhost";
-        $user = "root"; //数据库账号
-        $password = "root"; //数据库密码
+        $user = C('DB_USER');  //数据库账号
+        $password = C('DB_PWD'); //数据库密码
         $dbname = "duizhang"; //数据库名称
         if (!mysql_connect($host, $user, $password)) // 连接mysql数据库
         {

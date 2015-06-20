@@ -28,9 +28,14 @@ class LoginController extends Controller{
             //这个是一般用户
             if($res_config['open'] == '1'){
                 //一般用户可以登录
-                session('user',$res[0]);
-                session('quanxian',$res[0]['u_quanxian']);
-                echo 1;
+                if($res[0]['u_kaitong'] == '1'){
+                    session('user',$res[0]);
+                    session('quanxian',$res[0]['u_quanxian']);
+                    echo 1;
+                }else if($res[0]['u_kaitong'] == '0'){
+                    echo 3;
+                }
+
             }else{
                 //一般用户不能登录
                 echo 2;

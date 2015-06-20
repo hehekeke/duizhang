@@ -30,6 +30,8 @@ ul,li{ list-style:none}
                         alert("一般用户禁止登录");
                     }else if(data == 1){
                       window.location.href='/index.php/Home/Index/index';
+                    }else if(data == 3){
+                        alert("该帐号被锁定，禁止登录");
                     }
 
                 });

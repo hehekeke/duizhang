@@ -109,8 +109,13 @@
                 <div class="login">
                     是否关闭网站用户登录：
                     <input type="hidden" name="id" value="1" />
-                    <input type="radio" name="open" value="1">开通
-                    <input type="radio" name="open" value="0">关闭
+                    <if condition="$res['open'] == 1">
+                        <input type="radio" name="open" value="1" checked>开通
+                        <input type="radio" name="open" value="0">关闭
+                    <else/>
+                        <input type="radio" name="open" value="1" >开通
+                        <input type="radio" name="open" value="0" checked>关闭
+                    </if>
                 </div>
                 <div class="submit"><input type="submit" name="submit" value="修改系统通知"></div>
             </form>

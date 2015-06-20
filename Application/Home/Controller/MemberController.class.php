@@ -60,13 +60,18 @@ class MemberController extends Controller{
   public function add(){
     $member =  new \Home\Model\MemberModel();
 
-    if(!$member->create()){   
+    if(!$member->create()){
        exit($member->getError());
     }else{
       //上传头像
-       $this->upload($member);
-       $member->add();
-       $this->yiyuan_list();
+        if( $member->u_pic == null){
+            $member->add();
+            $this->yiyuan_list();
+        }else{
+            $this->upload($member);
+            $member->add();
+            $this->yiyuan_list();
+        }
     }
   }
 
@@ -80,7 +85,7 @@ class MemberController extends Controller{
     // 上传文件     
     $info = $upload->upload();    
     if(!$info) {
-      $this->error($upload->getError());  
+//      $this->error($upload->getError());
       $this->addMember();  
     }else{
        foreach($info as $file){

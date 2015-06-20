@@ -29,6 +29,9 @@ class NewsController extends Controller{
 	//update news
 	public function updateNews(){
 		$this->getNews();
+        $_open = D('config');
+        $res = $_open->find();
+        $this->assign("res",$res);
 		$this->display('sysInfo');
 	}
 	public function update(){
